@@ -303,20 +303,8 @@ class PlayState extends MusicBeatState
 		if(PlayState.SONG.stage == null || PlayState.SONG.stage.length < 1) {
 			switch (songName)
 			{
-				case 'spookeez' | 'south' | 'monster':
-					curStage = 'spooky';
-				case 'pico' | 'blammed' | 'philly' | 'philly-nice':
-					curStage = 'philly';
-				case 'milf' | 'satin-panties' | 'high':
-					curStage = 'limo';
-				case 'cocoa' | 'eggnog':
-					curStage = 'mall';
-				case 'winter-horrorland':
-					curStage = 'mallEvil';
-				case 'senpai' | 'roses':
-					curStage = 'school';
-				case 'thorns':
-					curStage = 'schoolEvil';
+				case 'frenzy':
+					curStage = 'lexi-stage';
 				default:
 					curStage = 'stage';
 			}
@@ -362,50 +350,6 @@ class PlayState extends MusicBeatState
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
-				}
-
-			case 'spooky': //Week 2
-				if(!ClientPrefs.lowQuality) {
-					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);
-				} else {
-					halloweenBG = new BGSprite('halloween_bg_low', -200, -100);
-				}
-				add(halloweenBG);
-
-				halloweenWhite = new BGSprite(null, -FlxG.width, -FlxG.height, 0, 0);
-				halloweenWhite.makeGraphic(Std.int(FlxG.width * 3), Std.int(FlxG.height * 3), FlxColor.WHITE);
-				halloweenWhite.alpha = 0;
-
-				//PRECACHE SOUNDS
-				CoolUtil.precacheSound('thunder_1');
-				CoolUtil.precacheSound('thunder_2');
-
-			case 'philly': //Week 3
-				if(!ClientPrefs.lowQuality) {
-					var bg:BGSprite = new BGSprite('philly/sky', -100, 0, 0.1, 0.1);
-					add(bg);
-				}
-
-				var city:BGSprite = new BGSprite('philly/city', -10, 0, 0.3, 0.3);
-				city.setGraphicSize(Std.int(city.width * 0.85));
-				city.updateHitbox();
-				add(city);
-
-				phillyCityLights = new FlxTypedGroup<BGSprite>();
-				add(phillyCityLights);
-
-				for (i in 0...5)
-				{
-					var light:BGSprite = new BGSprite('philly/win' + i, city.x, city.y, 0.3, 0.3);
-					light.visible = false;
-					light.setGraphicSize(Std.int(light.width * 0.85));
-					light.updateHitbox();
-					phillyCityLights.add(light);
-				}
-
-				if(!ClientPrefs.lowQuality) {
-					var streetBehind:BGSprite = new BGSprite('philly/behindTrain', -40, 50);
-					add(streetBehind);
 				}
 
 				phillyTrain = new BGSprite('philly/train', 2000, 360);
@@ -607,7 +551,15 @@ class PlayState extends MusicBeatState
 					bg.scale.set(6, 6);
 					bg.antialiasing = false;
 					add(bg);
-				}
+			}
+
+			case 'lexi-stage':
+				var house:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/HouseDay', 0, 0, 1, 1);
+				var sky:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/SkyDay', 0, 0, 0.9, 0.9);
+
+				add(sky);
+				add(house);
+			
 		}
 		
 		add(gfGroup);
@@ -732,6 +684,15 @@ class PlayState extends MusicBeatState
 			case 'schoolEvil':
 				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
+
+			case 'lexi-stage':
+				boyfriend.x = 2114.45;
+				boyfriend.y = 1290.6;
+				gf.x = 1361.05;
+				gf.y = 958.6;
+				dad.x = 808.4;
+				dad.y = 1315.8;
+				gf.scrollFactor.set(1, 1);
 		}
 
 		var file:String = Paths.json(songName + '/dialogue'); //Checks for json/Psych Engine dialogue

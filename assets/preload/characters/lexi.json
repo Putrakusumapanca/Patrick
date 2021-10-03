@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-25,
+				241
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Lexi Idle"
+		},
+		{
+			"offsets": [
+				72,
+				240
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Lexi Left"
+		},
+		{
+			"offsets": [
+				-81,
+				190
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Lexi Down"
+		},
+		{
+			"offsets": [
+				-52,
+				312
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Lexi Up"
+		},
+		{
+			"offsets": [
+				-64,
+				189
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Lexi Right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Lexi_Assets",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "lexi",
+	"flip_x": false,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
