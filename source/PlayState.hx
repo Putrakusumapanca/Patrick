@@ -304,7 +304,7 @@ class PlayState extends MusicBeatState
 			switch (songName)
 			{
 				case 'frenzy':
-					curStage = 'lexi-stage';
+					curStage = 'street-1';
 				default:
 					curStage = 'stage';
 			}
@@ -553,7 +553,7 @@ class PlayState extends MusicBeatState
 					add(bg);
 			}
 
-			case 'lexi-stage':
+			case 'street-1':
 				var house:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/HouseDay', 0, 0, 1, 1);
 				var sky:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/SkyDay', 0, 0, 0.9, 0.9);
 
@@ -685,7 +685,7 @@ class PlayState extends MusicBeatState
 				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
 
-			case 'lexi-stage':
+			case 'street-1':
 				boyfriend.x = 2114.45;
 				boyfriend.y = 1290.6;
 				gf.x = 1361.05;

@@ -32,7 +32,7 @@ class StageData {
 			switch (SONG.song.toLowerCase().replace(' ', '-'))
 			{
 				case 'frenzy':
-					stage = 'lexi-stage';
+					stage = 'street-1';
 				default:
 					stage = 'stage';
 			}

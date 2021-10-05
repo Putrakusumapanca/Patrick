@@ -1,0 +1,10 @@
+{
+	"idle_anim": "Lexi Idle",
+	"image": "Lexi_Menu",
+	"position": [
+		124,
+		116
+	],
+	"scale": 0.6,
+	"confirm_anim": "M Dad Idle"
+}
