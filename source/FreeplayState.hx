@@ -329,6 +329,15 @@ class FreeplayState extends MusicBeatState
 			
 		}
 
+		if(songs[curSelected].songName.toLowerCase()=="fandemonium-beta")
+		{
+			curDifficulty = 2;
+			#if !switch
+			intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+			#end
+				
+		}
+
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
