@@ -303,7 +303,7 @@ class PlayState extends MusicBeatState
 		if(PlayState.SONG.stage == null || PlayState.SONG.stage.length < 1) {
 			switch (songName)
 			{
-				case 'frenzy':
+				case 'frenzy' | 'owgh' | 'fandemonium-beta':
 					curStage = 'street-1';
 				default:
 					curStage = 'stage';

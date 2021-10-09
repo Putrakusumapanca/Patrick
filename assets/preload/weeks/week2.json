@@ -1,0 +1,39 @@
+{
+	"storyName": "Fangirl Frenzy",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "week1",
+	"startUnlocked": false,
+	"hideStoryMode": true,
+	"weekCharacters": [
+		"lexi",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Owgh",
+			"lexi",
+			[
+				255,
+				73,
+				115
+			]
+		],
+		[
+			"Fandemonium-beta",
+			"lexi",
+			[
+				255,
+				73,
+				115
+			]
+		]
+	],
+	"weekName": "Fangirl Frenzy"
+}

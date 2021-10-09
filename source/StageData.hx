@@ -31,7 +31,7 @@ class StageData {
 		} else if(SONG.song != null) {
 			switch (SONG.song.toLowerCase().replace(' ', '-'))
 			{
-				case 'frenzy':
+				case 'frenzy' | 'owgh' | 'fandemonium-beta':
 					stage = 'street-1';
 				default:
 					stage = 'stage';
