@@ -233,10 +233,14 @@ class FreeplayState extends MusicBeatState
 			changeSelection(shiftMult);
 		}
 
+		if(!(songs[curSelected].songName.toLowerCase()=='owgh'))
+		if(!(songs[curSelected].songName.toLowerCase()=='fandemonium-beta'))
+		{
 		if (controls.UI_LEFT_P)
 			changeDiff(-1);
 		if (controls.UI_RIGHT_P)
 			changeDiff(1);
+		}
 
 		if (controls.BACK)
 		{
@@ -315,6 +319,16 @@ class FreeplayState extends MusicBeatState
 
 	function changeDiff(change:Int = 0)
 	{
+
+		if(songs[curSelected].songName.toLowerCase()=="owgh")
+		{
+			curDifficulty = 2; //Force it to hard difficulty.
+			#if !switch
+			intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+			#end
+			
+		}
+
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
