@@ -178,6 +178,9 @@ class PlayState extends MusicBeatState
 	var halloweenBG:BGSprite;
 	var halloweenWhite:BGSprite;
 
+	var skysunset:BGSprite;
+	var housesunset:BGSprite;
+
 	var phillyCityLights:FlxTypedGroup<BGSprite>;
 	var phillyTrain:BGSprite;
 	var blammedLightsBlack:ModchartSprite;
@@ -305,6 +308,8 @@ class PlayState extends MusicBeatState
 			{
 				case 'frenzy' | 'owgh' | 'fandemonium-beta':
 					curStage = 'street-1';
+				case 'nightfall':
+					curStage = 'street-2-nightfall';
 				default:
 					curStage = 'stage';
 			}
@@ -560,6 +565,20 @@ class PlayState extends MusicBeatState
 				add(sky);
 				add(house);
 			
+			case 'street-2-nightfall':
+
+				housesunset = new BGSprite('Fangirl-Frenzy/images/stage/HouseSunset', 0, 0, 1, 1);
+				skysunset = new BGSprite('Fangirl-Frenzy/images/stage/SkySunset', 0, 0, 0.9, 0.9);
+
+				var housenight:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/HouseNight', 0, 0, 1, 1);
+				var skynight:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/NightSky', 0, 0, 0.9, 0.9);
+
+				add(skynight);
+				add(housenight);
+
+				add(skysunset);
+				add(housesunset);
+			
 		}
 		
 		add(gfGroup);
@@ -686,6 +705,16 @@ class PlayState extends MusicBeatState
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
 
 			case 'street-1':
+				boyfriend.x = 2114.45;
+				boyfriend.y = 1290.6;
+				gf.x = 1361.05;
+				gf.y = 958.6;
+				dad.x = 808.4;
+				dad.y = 1315.8;
+				gf.scrollFactor.set(1, 1);
+			case 'street-2-nightfall':
+				FlxTween.tween(housesunset, {alpha: 0}, 93, {startDelay: 5});
+				FlxTween.tween(skysunset, {alpha: 0}, 93, {startDelay: 5});
 				boyfriend.x = 2114.45;
 				boyfriend.y = 1290.6;
 				gf.x = 1361.05;
@@ -2498,6 +2527,12 @@ class PlayState extends MusicBeatState
 
 	public function triggerEventNote(eventName:String, value1:String, value2:String) {
 		switch(eventName) {
+
+			case 'bf fucking dies':
+				boyfriend.playAnim('dieslmao', true);
+				boyfriend.specialAnim = true;
+				boyfriend.heyTimer = 20;
+
 			case 'Hey!':
 				var value:Int = Std.parseInt(value1);
 				var time:Float = Std.parseFloat(value2);
@@ -2804,6 +2839,8 @@ class PlayState extends MusicBeatState
 			}
 		} else {
 			camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
+
+			//might help idk
 
 			switch (curStage)
 			{

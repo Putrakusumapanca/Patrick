@@ -33,6 +33,8 @@ class StageData {
 			{
 				case 'frenzy' | 'owgh' | 'fandemonium-beta':
 					stage = 'street-1';
+				case 'nightfall':
+					stage = 'street-2-nightfall';
 				default:
 					stage = 'stage';
 			}
