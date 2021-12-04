@@ -35,6 +35,8 @@ class StageData {
 					stage = 'street-1';
 				case 'nightfall':
 					stage = 'street-2-nightfall';
+				case 'fandemonium':
+					stage = 'street-3-fandemonium';
 				default:
 					stage = 'stage';
 			}

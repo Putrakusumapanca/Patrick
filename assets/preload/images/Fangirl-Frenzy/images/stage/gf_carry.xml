@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="crowd.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="carrying0000" x="0" y="0" width="435" height="480"/>
+	<SubTexture name="carrying0001" x="0" y="0" width="435" height="480"/>
+	<SubTexture name="carrying0002" x="467" y="0" width="435" height="480"/>
+	<SubTexture name="carrying0003" x="467" y="0" width="435" height="480"/>
+	<SubTexture name="carrying0004" x="0" y="512" width="435" height="480"/>
+	<SubTexture name="carrying0005" x="0" y="512" width="435" height="480"/>
+	<SubTexture name="carrying0006" x="467" y="512" width="435" height="480"/>
+	<SubTexture name="carrying0007" x="467" y="512" width="435" height="480"/>
+	<SubTexture name="carrying0008" x="0" y="1024" width="435" height="480"/>
+	<SubTexture name="carrying0009" x="0" y="1024" width="435" height="480"/>
+	<SubTexture name="carrying0010" x="467" y="1024" width="435" height="480"/>
+	<SubTexture name="carrying0011" x="467" y="1024" width="435" height="480"/>
+	<SubTexture name="carrying0012" x="467" y="1024" width="435" height="480"/>
+	<SubTexture name="carrying0013" x="467" y="1024" width="435" height="480"/>
+	<SubTexture name="carrying0014" x="467" y="1024" width="435" height="480"/>
+</TextureAtlas>
