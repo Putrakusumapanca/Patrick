@@ -87,7 +87,7 @@ class Note extends FlxSprite
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
-				case 'Hurt Note':
+				case 'Fuck You Up Note':
 					ignoreNote = mustPress;
 					reloadNote('FAKE');
 					noteSplashTexture = 'noteSplashes';
