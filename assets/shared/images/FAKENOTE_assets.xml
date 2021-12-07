@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fakenote.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fakenoteDown0000" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0001" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0002" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0003" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0004" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0005" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0006" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0007" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0008" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0009" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0010" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0011" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0012" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0013" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteDown0014" x="20" y="20" width="157" height="154"/>
+	<SubTexture name="fakenoteLeft0000" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0001" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0002" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0003" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0004" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0005" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0006" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0007" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0008" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0009" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0010" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0011" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0012" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0013" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteLeft0014" x="209" y="20" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0000" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0001" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0002" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0003" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0004" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0005" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0006" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0007" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0008" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0009" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0010" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0011" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0012" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0013" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteRight0014" x="20" y="209" width="154" height="157"/>
+	<SubTexture name="fakenoteUp0000" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0001" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0002" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0003" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0004" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0005" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0006" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0007" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0008" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0009" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0010" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0011" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0012" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0013" x="206" y="209" width="157" height="154"/>
+	<SubTexture name="fakenoteUp0014" x="206" y="209" width="157" height="154"/>
+</TextureAtlas>

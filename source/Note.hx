@@ -87,6 +87,13 @@ class Note extends FlxSprite
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
+				case 'Hurt Note':
+					ignoreNote = mustPress;
+					reloadNote('FAKE');
+					noteSplashTexture = 'noteSplashes';
+					colorSwap.hue = 0;
+					colorSwap.saturation = 0;
+					colorSwap.brightness = 0;
 			}
 			noteType = value;
 		}

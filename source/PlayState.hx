@@ -391,14 +391,6 @@ class PlayState extends MusicBeatState
 
 			case 'street-3-fandemonium':
 
-				fandemoniumHue = new BGSprite('Fangirl-Frenzy/images/stage/funny', 0, 0, 1, 1);
-
-				housenight = new BGSprite('Fangirl-Frenzy/images/stage/HouseNight-alt', 0, 0, 1, 1);
-				skynight = new BGSprite('Fangirl-Frenzy/images/stage/NightSky', 0, 0, 1, 1);
-
-				housesunset = new BGSprite('Fangirl-Frenzy/images/stage/HouseSunset', 0, 0, 1, 1);
-				skysunset = new BGSprite('Fangirl-Frenzy/images/stage/SkySunset', 0, 0, 1, 1);
-
 				var house:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/HouseDay', 0, 0, 1, 1);
 				var sky:BGSprite = new BGSprite('Fangirl-Frenzy/images/stage/SkyDay', 0, 0, 1, 1);
 
@@ -410,12 +402,6 @@ class PlayState extends MusicBeatState
 	
 				add(sky);
 				add(house);
-
-				add(skysunset);
-				add(housesunset);
-
-				add(skynight);
-				add(housenight);
 
 				add(gfDIES);
 				add(boppers);
@@ -2417,15 +2403,7 @@ class PlayState extends MusicBeatState
 				{
 				FlxTween.tween(housesunset, {alpha: 0}, 93, {startDelay: 5});
 				FlxTween.tween(skysunset, {alpha: 0}, 93, {startDelay: 5});
-				FlxTween.tween(fandemoniumHue, {alpha: 0.4}, 60, {startDelay: 45});
-				}
-				if(curStage == 'street-3-fandemonium')
-				{
-				FlxTween.tween(housenight, {alpha: 0}, 60, {startDelay: 0});
-				FlxTween.tween(skynight, {alpha: 0}, 60, {startDelay: 0});
-				FlxTween.tween(fandemoniumHue, {alpha: 0}, 60, {startDelay: 0});
-				FlxTween.tween(housesunset, {alpha: 0}, 45, {startDelay: 60});
-				FlxTween.tween(skysunset, {alpha: 0}, 45, {startDelay: 60});
+				FlxTween.tween(fandemoniumHue, {alpha: 0.55}, 60, {startDelay: 45});
 				}
 
 			case 'Hey!':
@@ -3346,7 +3324,43 @@ class PlayState extends MusicBeatState
 						}
 					}
 					return;
-			}
+
+				case 'Fuck You Up Note':
+				if(cpuControlled) return;
+
+				if(!boyfriend.stunned)
+				{
+					noteMiss(note.noteData);
+					if(!endingSong)
+					{
+						--songMisses;
+						RecalculateRating();
+						if(!note.isSustainNote) {
+							health -= 100;
+							if(!note.noteSplashDisabled) {
+								spawnNoteSplashOnNote(note);
+							}
+						}
+						else health -= 0.06;
+	
+						if(boyfriend.animation.getByName('hurt') != null) {
+							boyfriend.playAnim('hurt', true);
+							boyfriend.specialAnim = true;
+						}
+					}
+
+					note.wasGoodHit = true;
+					vocals.volume = 0;
+
+					if (!note.isSustainNote)
+					{
+						note.kill();
+						notes.remove(note, true);
+						note.destroy();
+					}
+				}
+				return;
+		}
 
 			if (!note.isSustainNote)
 			{
