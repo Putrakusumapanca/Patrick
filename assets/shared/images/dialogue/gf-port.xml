@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gf-port.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GFnormal.png" x="3" y="3081" width="2048" height="1536"/>
+	<SubTexture name="cheery.png" x="3" y="3" width="2048" height="1536"/>
+	<SubTexture name="frown.png" x="3" y="1542" width="2048" height="1536"/>
+	<SubTexture name="plead.png" x="3" y="4620" width="2048" height="1536"/>
+</TextureAtlas>

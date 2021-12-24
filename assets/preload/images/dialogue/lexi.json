@@ -1,0 +1,102 @@
+{
+	"position": [
+		-710,
+		-420
+	],
+	"dialogue_pos": "right",
+	"scale": 0.65,
+	"image": "lexi-port",
+	"animations": [
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "Lexinormal",
+			"idle_name": "Lexinormal"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "cheery",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "cheery",
+			"idle_name": "cheery"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "excited",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "excited",
+			"idle_name": "excited"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "lookdown",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "lookdown",
+			"idle_name": "lookdown"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "pumped",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "pumped",
+			"idle_name": "pumped"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "shrug",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "Shrug",
+			"idle_name": "Shrug"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "surprised",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "surprised",
+			"idle_name": "surprised"
+		}
+	]
+}

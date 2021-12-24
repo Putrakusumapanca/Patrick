@@ -1,5 +1,6 @@
 package;
 
+import flixel.system.FlxSound;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.text.FlxTypeText;
@@ -165,6 +166,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public var nextDialogueThing:Void->Void = null;
 	public var skipDialogueThing:Void->Void = null;
 	var bgFade:FlxSprite = null;
+	var backspace:FlxSprite;
 	var box:FlxSprite;
 	var textToType:String = '';
 
@@ -180,9 +182,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	{
 		super();
 
-		if(song != null && song != '') {
-			FlxG.sound.playMusic(Paths.music(song), 0);
-			FlxG.sound.music.fadeIn(2, 0, 1);
+		switch (PlayState.SONG.song.toLowerCase())
+		{
+			case 'frenzy':
+				FlxG.sound.playMusic(Paths.music('dialogue'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
 		}
 		
 		bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
@@ -194,18 +198,29 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		this.dialogueList = dialogueList;
 		spawnCharacters();
 
-		box = new FlxSprite(70, 370);
-		box.frames = Paths.getSparrowAtlas('speech_bubble');
+		backspace = new FlxSprite(1115, 660);
+		backspace.frames = Paths.getSparrowAtlas('backspace');
+		backspace.antialiasing = ClientPrefs.globalAntialiasing;
+		backspace.animation.addByPrefix('idle', 'backspace to exit white', 24);
+		backspace.animation.addByPrefix('selected', 'backspace PRESSED', 24, true);
+		backspace.animation.play('idle', true);
+		backspace.scale.x = 0.5;
+		backspace.scale.y = 0.5;
+		backspace.updateHitbox();
+		add(backspace);
+
+		box = new FlxSprite(46.3, -94.5);
+		box.frames = Paths.getSparrowAtlas('text-box-funny');
 		box.scrollFactor.set();
 		box.antialiasing = ClientPrefs.globalAntialiasing;
-		box.animation.addByPrefix('normal', 'speech bubble normal', 24);
-		box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
-		box.animation.addByPrefix('angry', 'AHH speech bubble', 24);
-		box.animation.addByPrefix('angryOpen', 'speech bubble loud open', 24, false);
-		box.animation.addByPrefix('center-normal', 'speech bubble middle', 24);
-		box.animation.addByPrefix('center-normalOpen', 'Speech Bubble Middle Open', 24, false);
-		box.animation.addByPrefix('center-angry', 'AHH Speech Bubble middle', 24);
-		box.animation.addByPrefix('center-angryOpen', 'speech bubble Middle loud open', 24, false);
+		box.animation.addByPrefix('normal', 'text idle', 24);
+		box.animation.addByPrefix('normalOpen', 'text open', 24, false);
+		box.animation.addByPrefix('angry', 'text idle', 24);
+		box.animation.addByPrefix('angryOpen', 'text idle', 24, false);
+		box.animation.addByPrefix('center-normal', 'text idle', 24);
+		box.animation.addByPrefix('center-normalOpen', 'text idle', 24, false);
+		box.animation.addByPrefix('center-angry', 'text idle', 24);
+		box.animation.addByPrefix('center-angryOpen', 'text idle', 24, false);
 		box.animation.play('normal', true);
 		box.visible = false;
 		box.setGraphicSize(Std.int(box.width * 0.9));
@@ -270,8 +285,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 	}
 
-	public static var DEFAULT_TEXT_X = 90;
-	public static var DEFAULT_TEXT_Y = 430;
+	public static var DEFAULT_TEXT_X = 115;
+	public static var DEFAULT_TEXT_Y = 470;
 	var scrollSpeed = 4500;
 	var daText:Alphabet = null;
 	override function update(elapsed:Float)
@@ -426,8 +441,55 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				kill();
 			}
 		}
+   
+		if (FlxG.keys.justPressed.ESCAPE && !activeESCAPE)
+			{
+				backspace.animation.play('selected', true);
+				backspace.x -= 10;
+				backspace.y -= 25;
+				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
+				FlxG.sound.music.fadeOut(1, 0);
+				activeESCAPE = true;
+			}
+		
+		if(activeESCAPE)
+			{
+				for (i in 0...arrayCharacters.length) {
+					var leChar:DialogueCharacter = arrayCharacters[0];
+					if(leChar != null) {
+						arrayCharacters.remove(leChar);
+						leChar.kill();
+						remove(leChar);
+						leChar.destroy();
+					}
+				}
+
+				backspace.alpha -= 0.8 * elapsed;
+				bgFade.alpha -= 0.8 * elapsed;
+				box.alpha -= 0.8 * elapsed;
+				chcESCAPE = true;
+				daText.kill();
+			}
+
+		if(activeESCAPE && chcESCAPE && bgFade.alpha <= 0 && box.alpha <= 0) 
+			{
+				box.kill();
+				remove(box);
+				box.destroy();
+
+				bgFade.kill();
+				remove(bgFade);
+				bgFade.destroy();
+
+				finishThing();
+				kill();
+			}
+
 		super.update(elapsed);
 	}
+
+	var activeESCAPE:Bool = false;
+	var chcESCAPE:Bool = false;
 
 	var lastCharacter:Int = -1;
 	var lastBoxType:String = '';

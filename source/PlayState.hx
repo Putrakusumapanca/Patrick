@@ -822,6 +822,10 @@ class PlayState extends MusicBeatState
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 
+				case 'frenzy':
+					snapCamFollowToPos(2237, 1425);
+					startDialogue(dialogueJson);
+
 				case 'fandemonium':
 					startVideo('nightfallending');
 
@@ -3772,6 +3776,7 @@ class PlayState extends MusicBeatState
 	var lightningOffset:Int = 8;
 
 	var lastBeatHit:Int = -1;
+
 	override function beatHit()
 	{
 		super.beatHit();

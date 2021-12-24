@@ -108,12 +108,18 @@ class DialogueCharacterEditorState extends MusicBeatState
 		ghostIdle.cameras = [camGame];
 		add(ghostIdle);
 
-		box = new FlxSprite(70, 370);
-		box.frames = Paths.getSparrowAtlas('speech_bubble');
+		box = new FlxSprite(46.3, -94.5);
+		box.frames = Paths.getSparrowAtlas('text-box-funny');
 		box.scrollFactor.set();
 		box.antialiasing = ClientPrefs.globalAntialiasing;
-		box.animation.addByPrefix('normal', 'speech bubble normal', 24);
-		box.animation.addByPrefix('center', 'speech bubble middle', 24);
+		box.animation.addByPrefix('normal', 'text idle', 24);
+		box.animation.addByPrefix('normalOpen', 'text open', 24, false);
+		box.animation.addByPrefix('angry', 'text idle', 24);
+		box.animation.addByPrefix('angryOpen', 'text idle', 24, false);
+		box.animation.addByPrefix('center-normal', 'text idle', 24);
+		box.animation.addByPrefix('center-normalOpen', 'text idle', 24, false);
+		box.animation.addByPrefix('center-angry', 'text idle', 24);
+		box.animation.addByPrefix('center-angryOpen', 'text idle', 24, false);
 		box.animation.play('normal', true);
 		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();

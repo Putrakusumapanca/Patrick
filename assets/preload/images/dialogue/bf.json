@@ -1,24 +1,76 @@
 {
 	"position": [
-		0,
-		0
+		-570,
+		-450
 	],
 	"dialogue_pos": "right",
-	"scale": 1,
-	"image": "BF_Dialogue",
+	"scale": 0.65,
+	"image": "bf-port",
 	"animations": [
 		{
-			"idle_offsets": [
-				-1,
-				-11
+			"loop_offsets": [
+				0,
+				0
 			],
+			"anim": "confused",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "confused-bf",
+			"idle_name": "confused-bf"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "frown",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "frown-bf",
+			"idle_name": "frown-bf"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "happy",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "happy-bf",
+			"idle_name": "happy-bf"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "upset",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "upset-bf",
+			"idle_name": "upset-bf"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "talk",
-			"idle_name": "BFTalk",
-			"loop_name": "bftalkloop"
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "BFnormal",
+			"idle_name": "BFnormal"
 		}
 	]
 }

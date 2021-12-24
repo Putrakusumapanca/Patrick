@@ -1,0 +1,63 @@
+{
+	"position": [
+		-820,
+		-490
+	],
+	"dialogue_pos": "center",
+	"scale": 0.65,
+	"image": "gf-port",
+	"animations": [
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "GFnormal",
+			"idle_name": "GFnormal"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "cheery",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "cheery",
+			"idle_name": "cheery"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "plead",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "plead",
+			"idle_name": "plead"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "frown",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "frown",
+			"idle_name": "frown"
+		}
+	]
+}

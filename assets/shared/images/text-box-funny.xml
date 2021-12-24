@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="text-box-funny.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="text idle0000" x="3" y="3" width="1168" height="876"/>
+	<SubTexture name="text open0000" x="1174" y="226" width="117" height="89" frameX="-525" frameY="-787" frameWidth="1168" frameHeight="876"/>
+	<SubTexture name="text open0001" x="1174" y="3" width="293" height="220" frameX="-437" frameY="-656" frameWidth="1168" frameHeight="876"/>
+	<SubTexture name="text open0002" x="882" y="882" width="584" height="438" frameX="-292" frameY="-438" frameWidth="1168" frameHeight="876"/>
+	<SubTexture name="text open0003" x="3" y="882" width="876" height="657" frameX="-146" frameY="-219" frameWidth="1168" frameHeight="876"/>
+	<SubTexture name="text open0004" x="3" y="3" width="1168" height="876"/>
+</TextureAtlas>
