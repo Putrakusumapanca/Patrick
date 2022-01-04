@@ -29,11 +29,13 @@ class Note extends FlxSprite
 	public var noteType(default, set):String = null;
 
 	public var eventName:String = '';
+	public var eventLength:Int = 0;
 	public var eventVal1:String = '';
 	public var eventVal2:String = '';
 
 	public var colorSwap:ColorSwap;
 	public var inEditor:Bool = false;
+	public var gfNote:Bool = false;
 	private var earlyHitMult:Float = 0.5;
 
 	public static var swagWidth:Float = 160 * 0.7;
@@ -64,6 +66,10 @@ class Note extends FlxSprite
 
 	public var texture(default, set):String = null;
 
+	public var noAnimation:Bool = false;
+	public var hitCausesMiss:Bool = false;
+	public var distance:Float = 2000;//plan on doing scroll directions soon -bb
+
 	private function set_texture(value:String):String {
 		if(texture != value) {
 			reloadNote('', value);
@@ -87,13 +93,29 @@ class Note extends FlxSprite
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
-				case 'Fuck You Up Note':
+					if(isSustainNote) {
+						missHealth = 0.1;
+					} else {
+						missHealth = 0.3;
+					}
+					hitCausesMiss = true;
+				case 'Speed Note':
 					ignoreNote = mustPress;
-					reloadNote('FAKE');
-					noteSplashTexture = 'noteSplashes';
+					reloadNote('SPEED');
+					noteSplashTexture = 'HURTnoteSplashes';
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
+					if(isSustainNote) {
+						missHealth = 0.1;
+					} else {
+						missHealth = 0.3;
+					}
+					hitCausesMiss = true;
+				case 'No Animation':
+					noAnimation = true;
+				case 'GF Sing':
+					gfNote = true;
 			}
 			noteType = value;
 		}
@@ -189,7 +211,12 @@ class Note extends FlxSprite
 						prevNote.animation.play('redhold');
 				}
 
-				prevNote.scale.y *= Conductor.stepCrochet / 100 * 1.05 * PlayState.SONG.speed;
+				prevNote.scale.y *= Conductor.stepCrochet / 100 * 1.05;
+				if(PlayState.instance != null)
+				{
+					prevNote.scale.y *= PlayState.instance.songSpeed;
+				}
+
 				if(PlayState.isPixelStage) {
 					prevNote.scale.y *= 1.19;
 				}
@@ -204,6 +231,7 @@ class Note extends FlxSprite
 		} else if(!isSustainNote) {
 			earlyHitMult = 1;
 		}
+		x += offsetX;
 	}
 
 	function reloadNote(?prefix:String = '', ?texture:String = '', ?suffix:String = '') {
@@ -231,15 +259,15 @@ class Note extends FlxSprite
 		var blahblah:String = arraySkin.join('/');
 		if(PlayState.isPixelStage) {
 			if(isSustainNote) {
-				loadGraphic(Paths.image('weeb/pixelUI/' + blahblah + 'ENDS'));
+				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS'));
 				width = width / 4;
 				height = height / 2;
-				loadGraphic(Paths.image('weeb/pixelUI/' + blahblah + 'ENDS'), true, Math.floor(width), Math.floor(height));
+				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS'), true, Math.floor(width), Math.floor(height));
 			} else {
-				loadGraphic(Paths.image('weeb/pixelUI/' + blahblah));
+				loadGraphic(Paths.image('pixelUI/' + blahblah));
 				width = width / 4;
 				height = height / 5;
-				loadGraphic(Paths.image('weeb/pixelUI/' + blahblah), true, Math.floor(width), Math.floor(height));
+				loadGraphic(Paths.image('pixelUI/' + blahblah), true, Math.floor(width), Math.floor(height));
 			}
 			setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 			loadPixelNoteAnims();
@@ -251,6 +279,9 @@ class Note extends FlxSprite
 		}
 		if(isSustainNote) {
 			scale.y = lastScaleY;
+			if(ClientPrefs.keSustains) {
+				scale.y *= 0.75;
+			}
 		}
 		updateHitbox();
 
@@ -329,7 +360,7 @@ class Note extends FlxSprite
 				wasGoodHit = true;
 		}
 
-		if (tooLate)
+		if (tooLate && !inEditor)
 		{
 			if (alpha > 0.3)
 				alpha = 0.3;

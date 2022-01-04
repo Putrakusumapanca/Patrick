@@ -1,102 +1,102 @@
 {
+	"dialogue_pos": "right",
 	"position": [
 		-710,
-		-420
+		-470
 	],
-	"dialogue_pos": "right",
 	"scale": 0.65,
-	"image": "lexi-port",
 	"animations": [
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "talk",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "Lexinormal",
-			"idle_name": "Lexinormal"
+			"idle_name": "Lexinormal",
+			"loop_name": "Lexinormal"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "cheery",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "cheery",
-			"idle_name": "cheery"
+			"idle_name": "cheery",
+			"loop_name": "cheery"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "excited",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "excited",
-			"idle_name": "excited"
+			"idle_name": "excited",
+			"loop_name": "excited"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "lookdown",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "lookdown",
-			"idle_name": "lookdown"
+			"idle_name": "lookdown",
+			"loop_name": "lookdown"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "pumped",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "pumped",
-			"idle_name": "pumped"
+			"idle_name": "pumped",
+			"loop_name": "pumped"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "shrug",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "Shrug",
-			"idle_name": "Shrug"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"anim": "surprised",
+			"idle_name": "Shrug",
+			"loop_name": "Shrug"
+		},
+		{
 			"idle_offsets": [
 				0,
 				0
 			],
-			"loop_name": "surprised",
-			"idle_name": "surprised"
+			"anim": "surprised",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "surprised",
+			"loop_name": "surprised"
 		}
-	]
+	],
+	"image": "lexi-port"
 }

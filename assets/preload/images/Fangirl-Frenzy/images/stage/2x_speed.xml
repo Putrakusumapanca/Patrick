@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="2x_speed.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fastforward0000" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0001" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0002" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0003" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0004" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0005" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0006" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0007" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0008" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0009" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0010" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0011" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0012" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0013" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0014" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0015" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0016" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0017" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0018" x="3" y="3" width="127" height="87"/>
+	<SubTexture name="fastforward0019" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0020" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0021" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0022" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0023" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0024" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0025" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0026" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0027" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0028" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0029" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0030" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0031" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0032" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0033" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0034" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0035" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0036" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0037" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0038" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+	<SubTexture name="fastforward0039" x="3" y="3" width="0" height="0" frameX="902" frameY="113" frameWidth="127" frameHeight="87"/>
+</TextureAtlas>

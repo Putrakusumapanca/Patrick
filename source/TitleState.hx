@@ -129,27 +129,6 @@ class TitleState extends MusicBeatState
 	{
 		if (!initialized)
 		{
-			/*var diamond:FlxGraphic = FlxGraphic.fromClass(GraphicTransTileDiamond);
-			diamond.persist = true;
-			diamond.destroyOnNoUse = false;
-
-			FlxTransitionableState.defaultTransIn = new TransitionData(FADE, FlxColor.BLACK, 1, new FlxPoint(0, -1), {asset: diamond, width: 32, height: 32},
-				new FlxRect(-300, -300, FlxG.width * 1.8, FlxG.height * 1.8));
-			FlxTransitionableState.defaultTransOut = new TransitionData(FADE, FlxColor.BLACK, 0.7, new FlxPoint(0, 1),
-				{asset: diamond, width: 32, height: 32}, new FlxRect(-300, -300, FlxG.width * 1.8, FlxG.height * 1.8));
-				
-			transIn = FlxTransitionableState.defaultTransIn;
-			transOut = FlxTransitionableState.defaultTransOut;*/
-
-			// HAD TO MODIFY SOME BACKEND SHIT
-			// IF THIS PR IS HERE IF ITS ACCEPTED UR GOOD TO GO
-			// https://github.com/HaxeFlixel/flixel-addons/pull/348
-
-			// var music:FlxSound = new FlxSound();
-			// music.loadStream(Paths.music('freakyMenu'));
-			// FlxG.sound.list.add(music);
-			// music.play();
-
 			if(FlxG.sound.music == null) {
 				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 
@@ -161,9 +140,6 @@ class TitleState extends MusicBeatState
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
-		// bg.antialiasing = ClientPrefs.globalAntialiasing;
-		// bg.setGraphicSize(Std.int(bg.width * 0.6));
-		// bg.updateHitbox();
 		add(bg);
 
 		logoBl = new FlxSprite(-51, -60);
@@ -173,10 +149,6 @@ class TitleState extends MusicBeatState
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		logoBl.setGraphicSize(Std.int(bg.width * 0.5));
-		// FlxG.watch.add(logoBl, "x");
-		// FlxG.watch.add(logoBl, "y");
-		// logoBl.screenCenter();
-		// logoBl.color = FlxColor.BLACK;
 
 		swagShader = new ColorSwap();
 		if(!FlxG.save.data.psykaEasterEgg || !easterEggEnabled) {

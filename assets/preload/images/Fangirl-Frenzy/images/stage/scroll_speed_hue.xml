@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scroll_speed_hue.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="hue0000" x="3" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0001" x="3" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0002" x="1286" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0003" x="1286" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0004" x="2569" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0005" x="2569" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0006" x="3" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0007" x="3" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0008" x="1286" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0009" x="1286" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0010" x="2569" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0011" x="2569" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0012" x="3" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0013" x="3" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0014" x="1286" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0015" x="1286" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0016" x="2569" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0017" x="2569" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0018" x="1286" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0019" x="1286" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0020" x="3" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0021" x="3" y="1449" width="1280" height="720"/>
+	<SubTexture name="hue0022" x="2569" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0023" x="2569" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0024" x="1286" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0025" x="1286" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0026" x="3" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0027" x="3" y="726" width="1280" height="720"/>
+	<SubTexture name="hue0028" x="2569" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0029" x="2569" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0030" x="1286" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0031" x="1286" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0032" x="3" y="3" width="1280" height="720"/>
+	<SubTexture name="hue0033" x="3" y="3" width="1280" height="720"/>
+</TextureAtlas>

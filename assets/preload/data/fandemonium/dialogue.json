@@ -1,0 +1,319 @@
+{
+	"dialogue": [
+		{
+			"expression": "cheery",
+			"text": "Tonight was absolutely AWESOME. Nobody even stood a CHANCE against you!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Those people were leagues below me,\n\\nthough. A TRUE opponent wouldn't have\\nbeen so easy!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Oh come on, don’t act like you weren’t\\nnervously sweating in that last battle...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "happy",
+			"text": "Pffft, you’re scared of LIGHTNING. Cut me some slack!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Haha, you have a point.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "frown",
+			"text": "All that aside, though… I’m absolutely\\npooped.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "frown",
+			"text": "Bobbing your head back and forth\\nendlessly is a lot more tiring than\\nyou'd think.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "talk",
+			"text": "Yeah, I’m ready to crash early tonight. I think I’ve earned a good sleep.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "happy",
+			"text": "Luckily there shouldn’t be anybody else to get in our way, it’s a straight shot home\\nfrom here!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "cheery",
+			"text": "Yup, absolutely no more trouble from this point forward!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "frown",
+			"text": "Wait a minute, who’s tha-",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "surprised",
+			"text": "Oh.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "surprised",
+			"text": "My.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "excited",
+			"text": "GOD.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "upset",
+			"text": "Jinxed it.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "pumped",
+			"text": "BOYFRIEND! Is it really you?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "confused",
+			"text": "Do I... …Know you?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "lookdown",
+			"text": "Probably not…...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "excited",
+			"text": "But now you do!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "excited",
+			"text": "It’s an absolute pleasure to meet you\\nafter all this time!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "confused",
+			"text": "Hold on, you can understand me?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "frown",
+			"text": "I was just thinking out loud. Figured all that you’d hear is “''beep skiddily boop''.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Of course I can!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "cheery",
+			"text": "You really think that I wouldn’t be fluent in boyfriend speak?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "frown",
+			"text": "I don’t know... …would you? I don’t even\\nknow who you are.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "cheery",
+			"text": "The names Lexi! I’m your biggest fan!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "talk",
+			"text": "Just ask any member of the Unofficial\\nBoyfriend Fanpage, and they’ll tell you!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "frown",
+			"text": "''Biggest Fan?'' I didn’t know boyfriend\\nhad fans. Or a fanpage.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "pumped",
+			"text": "Of course he has fans! He beat your\\nparents TWICE at their own game!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "talk",
+			"text": "That’s enough to get ANYBODY talking.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "confused",
+			"text": "Really? I thought the dearests were a\\ncakewalk.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "cheery",
+			"text": "That’s just it! You’re so skilled at funkin\\nthat you make light work of even the\\ndeadliest opponents!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "talk",
+			"text": "There are thousands of people who admire what you do...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "cheery",
+			"text": "And I’m one of them!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "upset",
+			"text": "Yeah… your hat, hair and shirt made that REEEEEAL subtle.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Was that supposed to be sarcasm? I’m not good at sarcasm.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "pumped",
+			"text": "BUT ITS OK! All that matters is that I’m right here, next to my idol, in the flesh!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "confused",
+			"text": "So what’ll it be? You want me to sign\\nsomething, take a selfie?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "lookdown",
+			"text": "Actually... uh...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "shrug",
+			"text": "I was wondering if maaaaaybe we could\\nsing a song?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "frown",
+			"text": "Sorry, but I just got done singing songs\\nwith literal gods. I’m kinda burnt out on\\nvocal department.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "plead",
+			"text": "Awww, come on boyfriend! She really\\ncares about you.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "plead",
+			"text": "Just one song couldn’t hurt, right?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
+		},
+		{
+			"expression": "upset",
+			"text": "Alright, fine, but only because girlfriend\\nseems so insistent on it.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "pumped",
+			"text": "AWESOME! I promise I’ll make this worth your time!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		}
+	]
+}
