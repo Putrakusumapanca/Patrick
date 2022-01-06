@@ -872,6 +872,7 @@ class PlayState extends MusicBeatState
 					scrollSpeedNue = new BGSprite('Fangirl-Frenzy/images/stage/scroll_speed_hue', 0, 0, 1, 1, ['hue'], true);
 					scrollSpeedNue.alpha = 0;
 					add(scrollSpeedNue);
+					scrollSpeedNue.cameras = [camHUD];
 			}
 
 		strumLineNotes.cameras = [camHUD];
@@ -887,7 +888,6 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
-		scrollSpeedNue.cameras = [camHUD];
 
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
