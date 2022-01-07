@@ -58,6 +58,19 @@
 			],
 			"loop_name": "frown",
 			"idle_name": "frown"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "SimleAndWave",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "SimleAndWave",
+			"idle_name": "SimleAndWave"
 		}
 	]
 }

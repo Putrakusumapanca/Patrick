@@ -261,8 +261,11 @@ class FreeplayState extends MusicBeatState
 			changeSelection(shiftMult);
 		}
 
-		if(!(songs[curSelected].songName.toLowerCase()=='owgh'))
-		if(!(songs[curSelected].songName.toLowerCase()=='fandemonium-beta'))
+		// if(!(songs[curSelected].songName.toLowerCase()=='frenzy'))
+		// if(!(songs[curSelected].songName.toLowerCase()=='nightfall'))
+		// if(!(songs[curSelected].songName.toLowerCase()=='fandemonium'))
+		// if(!(songs[curSelected].songName.toLowerCase()=='owgh'))
+		// if(!(songs[curSelected].songName.toLowerCase()=='fandemonium-beta'))
 
 		if (controls.UI_LEFT_P)
 			changeDiff(-1);
@@ -362,23 +365,48 @@ class FreeplayState extends MusicBeatState
 	function changeDiff(change:Int = 0)
 	{
 
-		if(songs[curSelected].songName.toLowerCase()=="owgh")
-			{
-				curDifficulty = 2; //Force it to hard difficulty.
-				#if !switch
-				intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
-				#end
+		// if(songs[curSelected].songName.toLowerCase()=="frenzy")
+		// 	{
+		// 		curDifficulty = 1; //Force it to hard difficulty.
+		// 		#if !switch
+		// 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+		// 		#end
 				
-			}
+		// 	}
 	
-			if(songs[curSelected].songName.toLowerCase()=="fandemonium-beta")
-			{
-				curDifficulty = 2;
-				#if !switch
-				intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
-				#end
+		// if(songs[curSelected].songName.toLowerCase()=="nightfall")
+		// 	{
+		// 		curDifficulty = 1;
+		// 		#if !switch
+		// 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+		// 		#end
 					
-			}
+		// 	}
+
+		// if(songs[curSelected].songName.toLowerCase()=="fandemonium")
+		// 	{
+		// 		curDifficulty = 1;
+		// 		#if !switch
+		// 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+		// 		#end
+					
+		// 	}
+		// if(songs[curSelected].songName.toLowerCase()=="owgh")
+		// 	{
+		// 		curDifficulty = 1;
+		// 		#if !switch
+		// 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+		// 		#end
+							
+		// 	}
+		// if(songs[curSelected].songName.toLowerCase()=="fandemonium-beta")
+		// 	{
+		// 		curDifficulty = 1;
+		// 		#if !switch
+		// 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
+		// 		#end
+							
+		// 	}
 
 		curDifficulty += change;
 

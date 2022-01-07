@@ -198,7 +198,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		this.dialogueList = dialogueList;
 		spawnCharacters();
 
-		backspace = new FlxSprite(1115, 660);
+		backspace = new FlxSprite(1115, 10);
 		backspace.frames = Paths.getSparrowAtlas('backspace');
 		backspace.antialiasing = ClientPrefs.globalAntialiasing;
 		backspace.animation.addByPrefix('idle', 'backspace to exit white', 24);
@@ -215,15 +215,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.antialiasing = ClientPrefs.globalAntialiasing;
 		box.animation.addByPrefix('normal', 'text idle', 24);
 		box.animation.addByPrefix('normalOpen', 'text open', 24, false);
-		box.animation.addByPrefix('angry', 'text idle', 24);
-		box.animation.addByPrefix('angryOpen', 'text idle', 24, false);
-		box.animation.addByPrefix('center-normal', 'text idle', 24);
-		box.animation.addByPrefix('center-normalOpen', 'text idle', 24, false);
-		box.animation.addByPrefix('center-angry', 'text idle', 24);
-		box.animation.addByPrefix('center-angryOpen', 'text idle', 24, false);
 		box.animation.play('normal', true);
 		box.visible = false;
-		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
 
@@ -575,14 +568,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public static function updateBoxOffsets(box:FlxSprite) { //Had to make it static because of the editors
 		box.centerOffsets();
 		box.updateHitbox();
-		if(box.animation.curAnim.name.startsWith('angry')) {
-			box.offset.set(50, 65);
-		} else if(box.animation.curAnim.name.startsWith('center-angry')) {
-			box.offset.set(50, 30);
-		} else {
-			box.offset.set(10, 0);
-		}
-		
 		if(!box.flipX) box.offset.y += 10;
 	}
 }

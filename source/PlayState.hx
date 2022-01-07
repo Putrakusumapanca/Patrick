@@ -989,8 +989,12 @@ class PlayState extends MusicBeatState
 					snapCamFollowToPos(2237, 1425);
 					startDialogue(dialogueJson);
 
+				case 'nightfall':
+					snapCamFollowToPos(2237, 1425);
+					startDialogue(dialogueJson);
+
 				case 'fandemonium':
-					videoAssFuck();
+					startVideo('nightfallending');
 
 				default:
 					startCountdown();
@@ -3895,6 +3899,9 @@ class PlayState extends MusicBeatState
 							boyfriend.playAnim('hurt', true);
 							boyfriend.specialAnim = true;
 						}
+					
+					case 'ghost Note':
+						trace('bitch fuck');
 
 					case 'Speed Note':
 

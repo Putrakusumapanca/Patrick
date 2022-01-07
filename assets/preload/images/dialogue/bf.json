@@ -1,76 +1,128 @@
 {
+	"dialogue_pos": "right",
 	"position": [
 		-570,
 		-450
 	],
-	"dialogue_pos": "right",
 	"scale": 0.65,
-	"image": "bf-port",
 	"animations": [
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "confused",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "confused-bf",
-			"idle_name": "confused-bf"
+			"idle_name": "confused-bf",
+			"loop_name": "confused-bf"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "frown",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "frown-bf",
-			"idle_name": "frown-bf"
+			"idle_name": "frown-bf",
+			"loop_name": "frown-bf"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "happy",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "happy-bf",
-			"idle_name": "happy-bf"
+			"idle_name": "happy-bf",
+			"loop_name": "happy-bf"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "upset",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "upset-bf",
-			"idle_name": "upset-bf"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"anim": "talk",
+			"idle_name": "upset-bf",
+			"loop_name": "upset-bf"
+		},
+		{
 			"idle_offsets": [
 				0,
 				0
 			],
-			"loop_name": "BFnormal",
-			"idle_name": "BFnormal"
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BFnormal",
+			"loop_name": "BFnormal"
+		},
+		{
+			"loop_name": "tired-bf",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "tired-bf",
+			"anim": "tired",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "mad-bf",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "mad-bf",
+			"anim": "mad",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "horror-bf",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "horror-bf",
+			"anim": "horror",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "exhausted-bf",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "exhausted-bf",
+			"anim": "exhausted",
+			"loop_offsets": [
+				0,
+				0
+			]
 		}
-	]
+	],
+	"image": "bf-port"
 }

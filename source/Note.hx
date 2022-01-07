@@ -99,6 +99,11 @@ class Note extends FlxSprite
 						missHealth = 0.3;
 					}
 					hitCausesMiss = true;
+				case 'ghost Note':
+					reloadNote('GHOST');
+					colorSwap.hue = 0;
+					colorSwap.saturation = 0;
+					colorSwap.brightness = 0;
 				case 'Speed Note':
 					ignoreNote = mustPress;
 					reloadNote('SPEED');

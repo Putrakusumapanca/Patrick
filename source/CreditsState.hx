@@ -79,6 +79,19 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			['Artists'],
+			['temp',				'temp',			'temp',																						'temp',														'444444'],
+
+			['Coder'],
+			['Joe The Horse', 		'joe',			'Coding',																				'https://www.youtube.com/channel/UC4K55-U3himy7GuM45YCiGw',		'444444'],
+
+			['Musicians'],
+			['Savestate Corrupted',	'savestate',	'Menu Theme + Song 1/Song 2 + Cutscene Music',											'https://gamebanana.com/members/1914394',						'444444'],
+			
+			['Charting'],
+			['Dra9on5',				'dra9on5',		'Charting + Insane Mode Charting + Credit Menu Configuration + Emotional Support',		'https://gamebanana.com/members/1793666',						'444444'],
+
+
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',						'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',					'https://twitter.com/river_oaken',		'C30085'],

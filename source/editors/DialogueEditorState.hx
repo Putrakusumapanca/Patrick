@@ -73,14 +73,7 @@ class DialogueEditorState extends MusicBeatState
 		box.antialiasing = ClientPrefs.globalAntialiasing;
 		box.animation.addByPrefix('normal', 'text idle', 24);
 		box.animation.addByPrefix('normalOpen', 'text open', 24, false);
-		box.animation.addByPrefix('angry', 'text idle', 24);
-		box.animation.addByPrefix('angryOpen', 'text idle', 24, false);
-		box.animation.addByPrefix('center-normal', 'text idle', 24);
-		box.animation.addByPrefix('center-normalOpen', 'text idle', 24, false);
-		box.animation.addByPrefix('center-angry', 'text idle', 24);
-		box.animation.addByPrefix('center-angryOpen', 'text idle', 24, false);
 		box.animation.play('normal', true);
-		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
 

@@ -3,10 +3,14 @@
 	<!-- Created with Adobe Animate version 19.0.0.326 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="Lexinormal.png" x="2054" y="1542" width="2048" height="1536"/>
-	<SubTexture name="Shrug.png" x="4105" y="1542" width="2048" height="1536"/>
-	<SubTexture name="cheery.png" x="3" y="3" width="2048" height="1536"/>
-	<SubTexture name="excited.png" x="4105" y="3" width="2048" height="1536"/>
-	<SubTexture name="lookdown.png" x="3" y="3081" width="2048" height="1536"/>
+	<SubTexture name="PEOPLE.png" x="4105" y="3081" width="2048" height="1536"/>
+	<SubTexture name="Shrug.png" x="4105" y="3" width="2048" height="1536"/>
+	<SubTexture name="cheery.png" x="3" y="3081" width="2048" height="1536"/>
+	<SubTexture name="excited.png" x="4105" y="1542" width="2048" height="1536"/>
+	<SubTexture name="guiltrip.png" x="2054" y="4620" width="2048" height="1536"/>
+	<SubTexture name="joke.png" x="2054" y="3081" width="2048" height="1536"/>
+	<SubTexture name="lookdown.png" x="3" y="1542" width="2048" height="1536"/>
 	<SubTexture name="pumped.png" x="2054" y="3" width="2048" height="1536"/>
-	<SubTexture name="surprised.png" x="3" y="1542" width="2048" height="1536"/>
+	<SubTexture name="reach.png" x="3" y="4620" width="2048" height="1536"/>
+	<SubTexture name="surprised.png" x="3" y="3" width="2048" height="1536"/>
 </TextureAtlas>
