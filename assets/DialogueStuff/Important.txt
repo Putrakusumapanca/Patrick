@@ -1,0 +1,1 @@
+portraits need to be 0.65 in scale to work properly.
