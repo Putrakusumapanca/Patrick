@@ -2,15 +2,16 @@
 <TextureAtlas imagePath="lexi-port.png">
 	<!-- Created with Adobe Animate version 19.0.0.326 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Lexinormal.png" x="2054" y="1542" width="2048" height="1536"/>
-	<SubTexture name="PEOPLE.png" x="4105" y="3081" width="2048" height="1536"/>
-	<SubTexture name="Shrug.png" x="4105" y="3" width="2048" height="1536"/>
-	<SubTexture name="cheery.png" x="3" y="3081" width="2048" height="1536"/>
-	<SubTexture name="excited.png" x="4105" y="1542" width="2048" height="1536"/>
-	<SubTexture name="guiltrip.png" x="2054" y="4620" width="2048" height="1536"/>
-	<SubTexture name="joke.png" x="2054" y="3081" width="2048" height="1536"/>
-	<SubTexture name="lookdown.png" x="3" y="1542" width="2048" height="1536"/>
-	<SubTexture name="pumped.png" x="2054" y="3" width="2048" height="1536"/>
-	<SubTexture name="reach.png" x="3" y="4620" width="2048" height="1536"/>
-	<SubTexture name="surprised.png" x="3" y="3" width="2048" height="1536"/>
+	<SubTexture name="ashamed0000" x="1306" y="3" width="552" height="587"/>
+	<SubTexture name="cheery0000" x="630" y="620" width="515" height="598"/>
+	<SubTexture name="crowd0000" x="3" y="3" width="704" height="550"/>
+	<SubTexture name="excited0000" x="523" y="1221" width="502" height="590"/>
+	<SubTexture name="guiltrip0000" x="710" y="3" width="593" height="614"/>
+	<SubTexture name="joke0000" x="1306" y="593" width="571" height="558"/>
+	<SubTexture name="lookdown0000" x="3" y="1694" width="507" height="547"/>
+	<SubTexture name="normal0000" x="513" y="1814" width="462" height="545"/>
+	<SubTexture name="pumped0000" x="1028" y="1753" width="488" height="554"/>
+	<SubTexture name="reach0000" x="3" y="556" width="624" height="539"/>
+	<SubTexture name="shrug0000" x="3" y="1098" width="517" height="593"/>
+	<SubTexture name="surprised0000" x="1148" y="1154" width="498" height="596"/>
 </TextureAtlas>

@@ -305,7 +305,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				} else if(currentText >= dialogueList.dialogue.length) {
 					dialogueEnded = true;
 					for (i in 0...textBoxTypes.length) {
-						var checkArray:Array<String> = ['', 'center-'];
+						var checkArray:Array<String> = ['', ''];
 						var animName:String = box.animation.curAnim.name;
 						for (j in 0...checkArray.length) {
 							if(animName == checkArray[j] + textBoxTypes[i] || animName == checkArray[j] + textBoxTypes[i] + 'Open') {
@@ -340,7 +340,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 			if(box.animation.curAnim.finished) {
 				for (i in 0...textBoxTypes.length) {
-					var checkArray:Array<String> = ['', 'center-'];
+					var checkArray:Array<String> = ['', ''];
 					var animName:String = box.animation.curAnim.name;
 					for (j in 0...checkArray.length) {
 						if(animName == checkArray[j] + textBoxTypes[i] || animName == checkArray[j] + textBoxTypes[i] + 'Open') {
@@ -515,7 +515,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 		var centerPrefix:String = '';
 		var lePosition:String = arrayCharacters[character].jsonFile.dialogue_pos;
-		if(lePosition == 'center') centerPrefix = 'center-';
+		if(lePosition == 'center') centerPrefix = '';
 
 		if(character != lastCharacter) {
 			box.animation.play(centerPrefix + boxType + 'Open', true);

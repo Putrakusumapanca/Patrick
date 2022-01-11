@@ -1,128 +1,180 @@
 {
-	"dialogue_pos": "right",
 	"position": [
-		-570,
-		-450
+		-30,
+		20
 	],
-	"scale": 0.65,
+	"dialogue_pos": "right",
+	"scale": 1,
+	"image": "bf-port",
 	"animations": [
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "confused",
-			"loop_offsets": [
-				0,
-				0
+			"idle_offsets": [
+				-25,
+				9
 			],
-			"idle_name": "confused-bf",
-			"loop_name": "confused-bf"
+			"loop_name": "confused",
+			"idle_name": "confused"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "frown",
-			"loop_offsets": [
-				0,
+			"idle_offsets": [
+				-35,
 				0
 			],
-			"idle_name": "frown-bf",
-			"loop_name": "frown-bf"
+			"loop_name": "frown",
+			"idle_name": "frown"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "happy",
-			"loop_offsets": [
-				0,
+			"idle_offsets": [
+				-35,
 				0
 			],
-			"idle_name": "happy-bf",
-			"loop_name": "happy-bf"
+			"loop_name": "cheery",
+			"idle_name": "cheery"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "upset",
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
-				0
+				35
 			],
-			"idle_name": "upset-bf",
-			"loop_name": "upset-bf"
+			"loop_name": "upset",
+			"idle_name": "upset"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "talk",
-			"loop_offsets": [
-				0,
-				0
-			],
-			"idle_name": "BFnormal",
-			"loop_name": "BFnormal"
-		},
-		{
-			"loop_name": "tired-bf",
 			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "tired-bf",
+			"loop_name": "normal",
+			"idle_name": "normal"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
 			"anim": "tired",
+			"idle_offsets": [
+				-35,
+				5
+			],
+			"loop_name": "tired",
+			"idle_name": "tired"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
-			]
-		},
-		{
-			"loop_name": "mad-bf",
-			"idle_offsets": [
-				0,
-				0
 			],
-			"idle_name": "mad-bf",
 			"anim": "mad",
+			"idle_offsets": [
+				-22,
+				0
+			],
+			"loop_name": "angry",
+			"idle_name": "angry"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
-			]
-		},
-		{
-			"loop_name": "horror-bf",
-			"idle_offsets": [
-				0,
-				0
 			],
-			"idle_name": "horror-bf",
 			"anim": "horror",
+			"idle_offsets": [
+				0,
+				-25
+			],
+			"loop_name": "startled",
+			"idle_name": "startled"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "exhausted",
+			"idle_offsets": [
+				-55,
+				-25
+			],
+			"loop_name": "exhausted",
+			"idle_name": "exhausted"
+		},
+		{
+			"loop_name": "me",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "me",
+			"anim": "me",
 			"loop_offsets": [
 				0,
 				0
 			]
 		},
 		{
-			"loop_name": "exhausted-bf",
+			"loop_name": "pissed",
 			"idle_offsets": [
-				0,
+				35,
 				0
 			],
-			"idle_name": "exhausted-bf",
-			"anim": "exhausted",
+			"idle_name": "pissed",
+			"anim": "pissed",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Superpissed",
+			"idle_offsets": [
+				45,
+				0
+			],
+			"idle_name": "Superpissed",
+			"anim": "superpissed",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "provoked",
+			"idle_offsets": [
+				0,
+				8
+			],
+			"idle_name": "provoked",
+			"anim": "provoked",
 			"loop_offsets": [
 				0,
 				0
 			]
 		}
-	],
-	"image": "bf-port"
+	]
 }

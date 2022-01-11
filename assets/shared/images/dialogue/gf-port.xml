@@ -2,9 +2,9 @@
 <TextureAtlas imagePath="gf-port.png">
 	<!-- Created with Adobe Animate version 19.0.0.326 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="GFnormal.png" x="3" y="3" width="2048" height="1536"/>
-	<SubTexture name="SimleAndWave.png" x="3" y="6159" width="2048" height="1536"/>
-	<SubTexture name="cheery.png" x="3" y="3081" width="2048" height="1536"/>
-	<SubTexture name="frown.png" x="3" y="4620" width="2048" height="1536"/>
-	<SubTexture name="plead.png" x="3" y="1542" width="2048" height="1536"/>
+	<SubTexture name="cheery0000" x="534" y="513" width="478" height="513"/>
+	<SubTexture name="frown0000" x="3" y="1181" width="501" height="543"/>
+	<SubTexture name="normal0000" x="526" y="3" width="492" height="507"/>
+	<SubTexture name="plead0000" x="3" y="3" width="520" height="610"/>
+	<SubTexture name="wave0000" x="3" y="616" width="528" height="562"/>
 </TextureAtlas>

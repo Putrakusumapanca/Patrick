@@ -2,13 +2,17 @@
 <TextureAtlas imagePath="bf-port.png">
 	<!-- Created with Adobe Animate version 19.0.0.326 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="BFnormal.png" x="4105" y="3" width="2048" height="1536"/>
-	<SubTexture name="confused-bf.png" x="2054" y="1542" width="2048" height="1536"/>
-	<SubTexture name="exhausted-bf.png" x="2054" y="3081" width="2048" height="1536"/>
-	<SubTexture name="frown-bf" x="2054" y="3" width="2048" height="1536"/>
-	<SubTexture name="happy-bf.png" x="3" y="1542" width="2048" height="1536"/>
-	<SubTexture name="horror-bf.png" x="3" y="3081" width="2048" height="1536"/>
-	<SubTexture name="mad-bf.png" x="4105" y="3081" width="2048" height="1536"/>
-	<SubTexture name="tired-bf.png" x="4105" y="1542" width="2048" height="1536"/>
-	<SubTexture name="upset-bf" x="3" y="3" width="2048" height="1536"/>
+	<SubTexture name="Superpissed0000" x="3" y="3" width="637" height="533"/>
+	<SubTexture name="angry0000" x="1127" y="578" width="508" height="554"/>
+	<SubTexture name="cheery0000" x="1087" y="1633" width="493" height="499"/>
+	<SubTexture name="confused0000" x="566" y="1105" width="518" height="530"/>
+	<SubTexture name="exhausted0000" x="1583" y="1633" width="452" height="478"/>
+	<SubTexture name="frown0000" x="502" y="1638" width="495" height="484"/>
+	<SubTexture name="me0000" x="562" y="567" width="562" height="535"/>
+	<SubTexture name="normal0000" x="1087" y="1135" width="520" height="495"/>
+	<SubTexture name="pissed0000" x="643" y="3" width="598" height="561"/>
+	<SubTexture name="provoked0000" x="3" y="539" width="556" height="555"/>
+	<SubTexture name="startled0000" x="3" y="1105" width="560" height="495"/>
+	<SubTexture name="tired0000" x="3" y="1603" width="496" height="511"/>
+	<SubTexture name="upset0000" x="1244" y="3" width="540" height="572"/>
 </TextureAtlas>

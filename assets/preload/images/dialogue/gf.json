@@ -1,76 +1,76 @@
 {
-	"position": [
-		-820,
-		-490
-	],
 	"dialogue_pos": "center",
-	"scale": 0.65,
-	"image": "gf-port",
+	"position": [
+		-55,
+		10
+	],
+	"scale": 1,
 	"animations": [
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "talk",
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "GFnormal",
-			"idle_name": "GFnormal"
+			"idle_name": "normal",
+			"loop_name": "normal"
 		},
 		{
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
 			"anim": "cheery",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "cheery",
-			"idle_name": "cheery"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
+			],
+			"idle_name": "cheery",
+			"loop_name": "cheery"
+		},
+		{
+			"idle_offsets": [
+				15,
+				5
 			],
 			"anim": "plead",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "plead",
-			"idle_name": "plead"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
+			],
+			"idle_name": "plead",
+			"loop_name": "plead"
+		},
+		{
+			"idle_offsets": [
+				15,
+				10
 			],
 			"anim": "frown",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "frown",
-			"idle_name": "frown"
-		},
-		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"anim": "SimleAndWave",
+			"idle_name": "frown",
+			"loop_name": "frown"
+		},
+		{
 			"idle_offsets": [
+				25,
+				25
+			],
+			"anim": "SimleAndWave",
+			"loop_offsets": [
 				0,
 				0
 			],
-			"loop_name": "SimleAndWave",
-			"idle_name": "SimleAndWave"
+			"idle_name": "wave",
+			"loop_name": "wave"
 		}
-	]
+	],
+	"image": "gf-port"
 }
