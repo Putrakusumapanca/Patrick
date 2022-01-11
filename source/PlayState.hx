@@ -2400,9 +2400,14 @@ class PlayState extends MusicBeatState
 			// Conductor.lastSongPos = FlxG.sound.music.time;
 		}
 
-		if (camZooming)
+		if (camZooming && !camscheck)
 		{
 			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1));
+			camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1));
+		}
+		else if(camscheck)
+		{
+			FlxG.camera.zoom = FlxMath.lerp(0.55, FlxG.camera.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1));
 			camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1));
 		}
 
@@ -3881,6 +3886,12 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	var beatHudCameraZoom:Float = 0.03;
+	var beatCameraZoom:Float = 0.015;
+	var beatcamsx2:Int = 4;
+	var noteHITcheck:Bool = false;
+	var camscheck:Bool = false;
+
 	function goodNoteHit(note:Note):Void
 	{
 		if (!note.wasGoodHit)
@@ -3908,28 +3919,26 @@ class PlayState extends MusicBeatState
 						if (songSpeedType == "constant")
 						return;
 
-						var noteHITcheck:Bool = false;
 						var scrollTimer:Float = 1;
 						var scrollRESET:Float = 1;
 
 						if (!noteHITcheck)
 						{
 							noteHITcheck = true;
+							camscheck = true;
+							beatHudCameraZoom = 0.08;
+							beatCameraZoom = 0.065;
+							beatcamsx2 = 2;
 
 							switch (curStage)
 							{
-								case 'street-1':
-									scrollRESET = 2;
-									scrollTimer = 5;
-								case 'street-2-nightfall':
-									scrollRESET = 2;
-									scrollTimer = 5;
 								case 'street-3-fandemonium':
-									scrollRESET = 1.3;
+									scrollRESET = 1.20;
 									scrollTimer = 8;
 							}
 
 							FlxTween.tween(scrollSpeedNue, {alpha: 1}, 1.5, {ease: FlxEase.smoothStepInOut});
+							FlxTween.tween(FlxG.camera, {zoom: 0.55}, 0.7, {ease: FlxEase.smoothStepInOut});
 							var newValue:Float = SONG.speed * ClientPrefs.getGameplaySetting('scrollspeed', 1) * scrollRESET;
 							songSpeedTween = FlxTween.tween(this, {songSpeed: newValue}, 2, {ease: FlxEase.linear, onComplete:function (twn:FlxTween)
 								{
@@ -3939,12 +3948,20 @@ class PlayState extends MusicBeatState
 
 							new FlxTimer().start(scrollTimer, function(tmr:FlxTimer)
 								{
+									FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1.7, {ease: FlxEase.smootherStepInOut, onComplete:function (twn:FlxTween)
+										{
+											camscheck = false;
+											beatcamsx2 = 4;
+										}
+									});
 									FlxTween.tween(scrollSpeedNue, {alpha: 0}, 1.5, {ease: FlxEase.smoothStepInOut});
 									var returnValue:Float = SONG.speed * ClientPrefs.getGameplaySetting('scrollspeed', 1) * 1;
 									songSpeedTween = FlxTween.tween(this, {songSpeed: returnValue}, 2, {ease: FlxEase.linear, onComplete:function (twn:FlxTween)
 										{
 											songSpeedTween = null;
 											noteHITcheck = false;
+											beatHudCameraZoom = 0.03;
+											beatCameraZoom = 0.015;
 										}
 									});		
 									trace('reset scroll speed');
@@ -4423,10 +4440,11 @@ class PlayState extends MusicBeatState
 		{
 			moveCameraSection(Std.int(curStep / 16));
 		}
-		if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.camZooms && curBeat % 4 == 0)
+
+		if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.camZooms && curBeat % beatcamsx2 == 0)
 		{
-			FlxG.camera.zoom += 0.015;
-			camHUD.zoom += 0.03;
+			FlxG.camera.zoom += beatCameraZoom; //0.015
+			camHUD.zoom += beatHudCameraZoom; //0.03
 		}
 
 		iconP1.scale.set(1.2, 1.2);
