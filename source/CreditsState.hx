@@ -79,19 +79,16 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Artists'],
-			['temp',				'temp',			'temp',																						'temp',														'444444'],
-
-			['Coder'],
-			['Joe The Horse', 		'joe',			'Coding',																				'https://www.youtube.com/channel/UC4K55-U3himy7GuM45YCiGw',		'444444'],
-
-			['Musicians'],
-			['Savestate Corrupted',	'savestate',	'Menu Theme + Song 1/Song 2 + Cutscene Music',											'https://gamebanana.com/members/1914394',						'444444'],
-			
-			['Charting'],
-			['Dra9on5',				'dra9on5',		'Charting + Insane Mode Charting + Credit Menu Configuration + Emotional Support',		'https://gamebanana.com/members/1793666',						'444444'],
-
-
+			['FGF Team'],
+			['Dra9on5',				'dra9on5',		'Initial mod concept, Team organizer/director, Charter, Vocal/SFX assistance',		'https://gamebanana.com/members/1793666',						'7d30a7'],
+			['Nutquesadilla',				'nutcase',		'Creator of Lexi, Concept artist, Plot/dialogue writer, Dialogue portrait/icon artist, Charter',		'https://gamebanana.com/members/1793666',						'7ffbf2'],
+			['Savestate Corrupted',	'savestate',	'Composer, Cutscene Audio',											'https://gamebanana.com/members/1914394',						'ff7e00'],
+			['Jason The Art Kid', 		'jason',			'Song 1 Lexi sprite animator, Stage background artist',																				'https://www.youtube.com/channel/UC4K55-U3himy7GuM45YCiGw',		'853b3c'],
+			['Dause_Retch',	'dause',	'Cutscene 1 animator, Song 3 Lexi Sprite animator, Song 1 Lexi sprite touchups',											'https://gamebanana.com/members/1914394',						'ff2400'],
+			['Joe The Horse',				'joe',		'Coder, Animation help',		'https://gamebanana.com/members/1793666',						'707b81'],
+			['Typic',				'typic',		'Cutscene 2 animator',		'https://gamebanana.com/members/1793666',						'444444'],
+			['King Peggy',				'peggy',		'Logo Designer',		'https://gamebanana.com/members/1793666',						'707b81'],
+			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',						'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',					'https://twitter.com/river_oaken',		'C30085'],
