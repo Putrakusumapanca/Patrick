@@ -2215,13 +2215,13 @@ class PlayState extends MusicBeatState
 
 				if(boyfriend.animation.curAnim.name.startsWith('get up'))
 					{
-						// var soundplaying:Bool = false;
-						// if (!soundplaying && boyfriend.animation.curAnim.curFrame == 25)
-						// 	{
-						// 		FlxG.sound.play(Paths.sound('bwam'));
-						// 		soundplaying = true;
-						// 	}
-						// this really doesnt fit
+						 var soundplaying:Bool = false;
+						 if (!soundplaying && boyfriend.animation.curAnim.curFrame == 110)
+						 	{
+						 		FlxG.sound.play(Paths.sound('bwam'));
+						 		soundplaying = true;
+						 	}
+						
 						if (boyfriend.animation.curAnim.curFrame == 84)
 							{
 								FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1, {ease: FlxEase.smootherStepInOut});
