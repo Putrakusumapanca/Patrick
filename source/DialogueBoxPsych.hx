@@ -488,6 +488,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var lastBoxType:String = '';
 	function startNextDialog():Void
 	{
+		if(!activeESCAPE)
+		{
 		var curDialogue:DialogueLine = null;
 		do {
 			curDialogue = dialogueList.dialogue[currentText];
@@ -553,6 +555,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 		if(nextDialogueThing != null) {
 			nextDialogueThing();
+		}
 		}
 	}
 
