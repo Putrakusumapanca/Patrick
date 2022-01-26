@@ -2,16 +2,26 @@
 <TextureAtlas imagePath="lexi-port.png">
 	<!-- Created with Adobe Animate version 19.0.0.326 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="ashamed0000" x="1306" y="3" width="552" height="587"/>
-	<SubTexture name="cheery0000" x="630" y="620" width="515" height="598"/>
+	<SubTexture name="ThreeReach0000" x="1306" y="606" width="623" height="555"/>
+	<SubTexture name="Twosad0000" x="541" y="1799" width="530" height="589"/>
+	<SubTexture name="Twoshirtgrab0000" x="1306" y="3" width="592" height="600"/>
+	<SubTexture name="altreach0000" x="3" y="556" width="691" height="523"/>
+	<SubTexture name="ashamed0000" x="546" y="1209" width="552" height="587"/>
+	<SubTexture name="cheery0000" x="1074" y="2267" width="515" height="598"/>
+	<SubTexture name="cmere0000" x="697" y="620" width="584" height="586"/>
 	<SubTexture name="crowd0000" x="3" y="3" width="704" height="550"/>
-	<SubTexture name="excited0000" x="523" y="1221" width="502" height="590"/>
+	<SubTexture name="excited0000" x="1045" y="2868" width="502" height="590"/>
+	<SubTexture name="explain0000" x="3" y="1082" width="540" height="628"/>
 	<SubTexture name="guiltrip0000" x="710" y="3" width="593" height="614"/>
-	<SubTexture name="joke0000" x="1306" y="593" width="571" height="558"/>
-	<SubTexture name="lookdown0000" x="3" y="1694" width="507" height="547"/>
-	<SubTexture name="normal0000" x="513" y="1814" width="462" height="545"/>
-	<SubTexture name="pumped0000" x="1028" y="1753" width="488" height="554"/>
-	<SubTexture name="reach0000" x="3" y="556" width="624" height="539"/>
-	<SubTexture name="shrug0000" x="3" y="1098" width="517" height="593"/>
-	<SubTexture name="surprised0000" x="1148" y="1154" width="498" height="596"/>
+	<SubTexture name="hey0000" x="3" y="2317" width="519" height="600"/>
+	<SubTexture name="joke0000" x="1101" y="1706" width="571" height="558"/>
+	<SubTexture name="lookdown0000" x="1036" y="3461" width="507" height="547"/>
+	<SubTexture name="normal0000" x="1546" y="3461" width="462" height="545"/>
+	<SubTexture name="pumped0000" x="3" y="3519" width="488" height="554"/>
+	<SubTexture name="reach0000" x="1284" y="1164" width="624" height="539"/>
+	<SubTexture name="sad0000" x="3" y="1713" width="535" height="601"/>
+	<SubTexture name="shirtgrab0000" x="504" y="2987" width="529" height="549"/>
+	<SubTexture name="shrug0000" x="525" y="2391" width="517" height="593"/>
+	<SubTexture name="surprised0000" x="3" y="2920" width="498" height="596"/>
+	<SubTexture name="wow0000" x="494" y="3539" width="485" height="544"/>
 </TextureAtlas>

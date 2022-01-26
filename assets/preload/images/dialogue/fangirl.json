@@ -1,0 +1,115 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		-30,
+		20
+	],
+	"scale": 1,
+	"animations": [
+		{
+			"loop_name": "twoFanGirl",
+			"idle_offsets": [
+				0,
+				70
+			],
+			"idle_name": "twoFanGirl",
+			"anim": "twoFanGirl",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "PointtwoFanGirl",
+			"idle_offsets": [
+				0,
+				70
+			],
+			"idle_name": "PointtwoFanGirl",
+			"anim": "PointtwoFanGirl",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "oneFanGirl",
+			"idle_offsets": [
+				0,
+				40
+			],
+			"idle_name": "oneFanGirl",
+			"anim": "oneFanGirl",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "MeoneFanGirl",
+			"idle_offsets": [
+				0,
+				40
+			],
+			"idle_name": "MeoneFanGirl",
+			"anim": "MeoneFanGirl",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "madoneFanGirl",
+			"idle_offsets": [
+				-10,
+				50
+			],
+			"idle_name": "madoneFanGirl",
+			"anim": "madoneFanGirl",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "HappyThreeFanGirl",
+			"idle_offsets": [
+				20,
+				60
+			],
+			"idle_name": "HappyThreeFanGirl",
+			"anim": "HappyThreeFanGirl",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Threefangirl",
+			"idle_offsets": [
+				30,
+				90
+			],
+			"idle_name": "Threefangirl",
+			"anim": "Threefangirl",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "GarGar",
+			"idle_offsets": [
+				30,
+				120
+			],
+			"idle_name": "GarGar",
+			"anim": "GarGar",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "fangirls-port"
+}

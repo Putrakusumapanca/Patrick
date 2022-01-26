@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fangirls-port.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GarGar0000" x="3" y="658" width="545" height="685"/>
+	<SubTexture name="HappyThreeFanGirl0000" x="551" y="658" width="548" height="631"/>
+	<SubTexture name="MeoneFanGirl0000" x="536" y="1346" width="537" height="650"/>
+	<SubTexture name="PointtwoFanGirl0000" x="1102" y="623" width="491" height="607"/>
+	<SubTexture name="Threefangirl0000" x="3" y="3" width="590" height="652"/>
+	<SubTexture name="madoneFanGirl0000" x="3" y="1346" width="530" height="676"/>
+	<SubTexture name="oneFanGirl0000" x="596" y="3" width="526" height="617"/>
+	<SubTexture name="twoFanGirl0000" x="1076" y="1292" width="520" height="635"/>
+</TextureAtlas>

@@ -1,7 +1,7 @@
 {
 	"storyName": "Fangirl Frenzy",
 	"hideFreeplay": false,
-	"weekBackground": "",
+	"weekBackground": "weekbanner",
 	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
@@ -10,9 +10,9 @@
 	],
 	"startUnlocked": true,
 	"weekCharacters": [
-		"lexi",
-		"bf",
-		"gf"
+		"",
+		"",
+		""
 	],
 	"songs": [
 		[

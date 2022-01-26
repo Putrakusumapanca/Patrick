@@ -1,167 +1,297 @@
 {
-	"dialogue_pos": "right",
 	"position": [
 		-800,
 		-55
 	],
+	"dialogue_pos": "right",
 	"scale": 1,
+	"image": "lexi-port",
 	"animations": [
 		{
-			"idle_offsets": [
-				-10,
-				-35
-			],
-			"anim": "talk",
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "normal",
-			"loop_name": "normal"
+			"anim": "talk",
+			"idle_offsets": [
+				-10,
+				-35
+			],
+			"loop_name": "normal",
+			"idle_name": "normal"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "cheery",
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "cheery",
-			"loop_name": "cheery"
+			"loop_name": "cheery",
+			"idle_name": "cheery"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "excited",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "excited",
+			"idle_name": "excited"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "excited",
-			"loop_name": "excited"
-		},
-		{
+			"anim": "lookdown",
 			"idle_offsets": [
 				5,
 				-35
 			],
-			"anim": "lookdown",
+			"loop_name": "lookdown",
+			"idle_name": "lookdown"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "lookdown",
-			"loop_name": "lookdown"
-		},
-		{
+			"anim": "pumped",
 			"idle_offsets": [
 				0,
 				-10
 			],
-			"anim": "pumped",
+			"loop_name": "pumped",
+			"idle_name": "pumped"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "pumped",
-			"loop_name": "pumped"
-		},
-		{
+			"anim": "shrug",
 			"idle_offsets": [
 				15,
 				-5
 			],
-			"anim": "shrug",
-			"loop_offsets": [
-				0,
-				0
-			],
-			"idle_name": "shrug",
-			"loop_name": "shrug"
+			"loop_name": "shrug",
+			"idle_name": "shrug"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "surprised",
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "surprised",
-			"loop_name": "surprised"
+			"loop_name": "surprised",
+			"idle_name": "surprised"
 		},
 		{
-			"loop_offsets": [
-				0,
-				0
-			],
-			"anim": "reach",
 			"idle_offsets": [
 				-10,
 				-55
 			],
-			"loop_name": "reach",
-			"idle_name": "reach"
-		},
-		{
+			"anim": "reach",
 			"loop_offsets": [
 				0,
 				0
 			],
-			"anim": "PEOPLE",
+			"idle_name": "reach",
+			"loop_name": "reach"
+		},
+		{
 			"idle_offsets": [
 				25,
 				-5
 			],
-			"loop_name": "crowd",
-			"idle_name": "crowd"
-		},
-		{
+			"anim": "PEOPLE",
 			"loop_offsets": [
 				0,
 				0
 			],
-			"anim": "joke",
+			"idle_name": "crowd",
+			"loop_name": "crowd"
+		},
+		{
 			"idle_offsets": [
 				0,
 				-35
 			],
-			"loop_name": "joke",
-			"idle_name": "joke"
+			"anim": "joke",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "joke",
+			"loop_name": "joke"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"anim": "guiltrip",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "guiltrip",
+			"loop_name": "guiltrip"
 		},
 		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"anim": "guiltrip",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"loop_name": "guiltrip",
-			"idle_name": "guiltrip"
-		},
-		{
-			"loop_name": "ashamed",
+			"anim": "ashamed",
 			"idle_offsets": [
 				10,
 				-45
 			],
-			"idle_name": "ashamed",
-			"anim": "ashamed",
+			"loop_name": "ashamed",
+			"idle_name": "ashamed"
+		},
+		{
+			"loop_name": "wow",
+			"idle_offsets": [
+				0,
+				-40
+			],
+			"idle_name": "wow",
+			"anim": "wow",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Twoshirtgrab",
+			"idle_offsets": [
+				0,
+				-30
+			],
+			"idle_name": "Twoshirtgrab",
+			"anim": "Twoshirtgrab",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "Twosad",
+			"idle_offsets": [
+				0,
+				-30
+			],
+			"idle_name": "Twosad",
+			"anim": "Twosad",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "ThreeReach",
+			"idle_offsets": [
+				0,
+				-40
+			],
+			"idle_name": "ThreeReach",
+			"anim": "ThreeReach",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "shirtgrab",
+			"idle_offsets": [
+				0,
+				-40
+			],
+			"idle_name": "shirtgrab",
+			"anim": "shirtgrab",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "sad",
+			"idle_offsets": [
+				0,
+				-20
+			],
+			"idle_name": "sad",
+			"anim": "sad",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "altreach",
+			"idle_offsets": [
+				0,
+				-40
+			],
+			"idle_name": "altreach",
+			"anim": "altreach",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "hey",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "hey",
+			"anim": "hey",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "explain",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "explain",
+			"anim": "explain",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "cmere",
+			"idle_offsets": [
+				-10,
+				-40
+			],
+			"idle_name": "cmere",
+			"anim": "cmere",
 			"loop_offsets": [
 				0,
 				0
 			]
 		}
-	],
-	"image": "lexi-port"
+	]
 }

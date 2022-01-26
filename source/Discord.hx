@@ -19,6 +19,7 @@ class DiscordClient
 			clientID: "930953879074512946",
 			//930953879074512946
 			//joe dont let your bitch ass self forget too add this back
+			//okay we are good
 			onReady: onReady,
 			onError: onError,
 			onDisconnected: onDisconnected

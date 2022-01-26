@@ -194,6 +194,7 @@ class PlayState extends MusicBeatState
 
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
+	var endDialogueJson:DialogueFile = null;
 
 	var halloweenBG:BGSprite;
 	var halloweenWhite:BGSprite;
@@ -674,6 +675,11 @@ class PlayState extends MusicBeatState
 			dialogueJson = DialogueBoxPsych.parseDialogue(file);
 		}
 
+		var file:String = Paths.json(songName + '/endDialogue');
+		if (OpenFlAssets.exists(file)) {
+			endDialogueJson = DialogueBoxPsych.parseDialogue(file);
+		}
+
 		var file:String = Paths.txt(songName + '/' + songName + 'Dialogue'); //Checks for vanilla/Senpai dialogue
 		if (OpenFlAssets.exists(file)) {
 			dialogue = CoolUtil.coolTextFile(file);
@@ -994,8 +1000,7 @@ class PlayState extends MusicBeatState
 					startDialogue(dialogueJson);
 
 				case 'fandemonium':
-					// startVideo('nightfallending');
-					videoAssFuck();
+					startVideo('nightfallending');
 
 				default:
 					startCountdown();
@@ -1126,15 +1131,15 @@ class PlayState extends MusicBeatState
 
 		FlxTween.tween(blackScreen, {alpha: 1}, 3, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
 			{
-				if(dialogueJson.dialogue.length > 0) 
+				if(endDialogueJson.dialogue.length > 0) 
 					{
 						CoolUtil.precacheSound('dialogue');
 						CoolUtil.precacheSound('dialogueClose');
-						var doof:DialogueBoxPsych = new DialogueBoxPsych(dialogueJson);
+						var doof:DialogueBoxPsych = new DialogueBoxPsych(endDialogueJson);
 						doof.scrollFactor.set();
 						if(endingSong) 
 							{
-								doof.finishThing = returnToMenu;
+								doof.finishThing = thankYouForPlaying;
 							} 
 						doof.nextDialogueThing = startNextDialogue;
 						doof.skipDialogueThing = skipDialogue;
@@ -1143,6 +1148,29 @@ class PlayState extends MusicBeatState
 					} 
 			}
 		});
+	}
+
+	function thankYouForPlaying()
+	{
+		var thankYou:BGSprite = new BGSprite('Fangirl-Frenzy/images/ui/endcard', 0, 0, 1, 1);
+		thankYou.cameras = [camHUD];
+		thankYou.alpha = 0;
+		add(thankYou);
+
+		FlxG.sound.play(Paths.sound('endcardstinger'));
+
+		FlxTween.tween(thankYou, {alpha: 1}, 1, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+			{
+				new FlxTimer().start(10, function(tmr:FlxTimer)
+					{
+						FlxTween.tween(thankYou, {alpha: 0}, 3, {ease: FlxEase.linear,onComplete: function(twn:FlxTween)
+							{
+								returnToMenu();
+							}
+							});
+					});
+			}
+			});
 	}
 
 	public function returnToMenu()

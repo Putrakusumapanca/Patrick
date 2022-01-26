@@ -1,151 +1,151 @@
 {
 	"dialogue": [
 		{
+			"expression": "horror",
+			"text": "Huh... where am I?",
+			"boxState": "normal",
 			"speed": 0.085,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "horror",
-			"text": "Huh... where am I?"
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "PEOPLE",
-			"text": "SURPRISE!!!"
+			"text": "SURPRISE!!!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.065,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "horror",
-			"text": "W-What do you mean “''surprise?''"
+			"text": "W-What do you mean “''surprise?''",
+			"boxState": "normal",
+			"speed": 0.065,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "excited",
-			"text": "Look around! I gathered up the whole\\nUnofficial Boyfriend Fanpage community\\nto this very spot!"
+			"text": "Look around! I gathered up the whole\\nUnofficial Boyfriend Fanpage community\\nto this very spot!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "While you were sleeping on that sidewalk, we all came together and formed a crowd!"
+			"text": "While you were sleeping on that sidewalk, we all came together and formed a crowd!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "pumped",
-			"text": "Now EVERYBODY gets to meet you!"
-		},
-		{
-			"speed": 0.045,
-			"portrait": "bf",
+			"text": "Now EVERYBODY get's to meet you!",
 			"boxState": "normal",
-			"expression": "provoked",
-			"text": "What? You…you surrounded me in FANGIRLS?"
-		},
-		{
-			"speed": 0.055,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "excited",
-			"text": "Exactly! Isn’t it awesome?"
-		},
-		{
-			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "pissed",
-			"text": "Awesome? One fangirl was PLENTY! I just wanted to go home, and now you have me SURROUNDED?"
-		},
-		{
-			"speed": 0.035,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "superpissed",
-			"text": "I fell asleep on COLD ASPHALT because YOU stopped me in my tracks!"
-		},
-		{
-			"speed": 0.06,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "ashamed",
-			"text": "I uh… I didn’t realize that you would feel this way..."
-		},
-		{
-			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "superpissed",
-			"text": "Wait a minute... …WHAT DID YOU DO WITH\\nGIRLFRIEND?"
-		},
-		{
-			"speed": 0.06,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "lookdown",
-			"text": "She uh…went crowd surfing..."
-		},
-		{
-			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "mad",
-			"text": "CROWD SURFING? If that’s true, it\\ncertainly wasn’t at her own will!"
-		},
-		{
-			"speed": 0.035,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "me",
-			"text": "Girlfriend HATES people putting their hands all over her, except for MINE!"
-		},
-		{
 			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "guiltrip",
-			"text": "Listen, I don’t know what happened to her! She probably got lost in the crowd\\nsomewhere, but couldn’t have gone far!"
+			"portrait": "lexi"
 		},
 		{
+			"expression": "provoked",
+			"text": "What? You... …you surrounded me in\\nFANGIRLS?",
+			"boxState": "normal",
+			"speed": 0.045,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": "Exactly! Isn't it awesome?",
+			"boxState": "normal",
 			"speed": 0.055,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "guiltrip",
-			"text": "I thought I was doing something nice by\\nletting you meet up with people who care about you!"
+			"portrait": "lexi"
 		},
 		{
+			"expression": "pissed",
+			"text": "Awesome? One fangirl was PLENTY! I just wanted to go home, and now you have me SURROUNDED?",
+			"boxState": "normal",
 			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "mad",
-			"text": "Save the sob story for later, Lexi…... we can talk about this as soon as I get Girlfriend back."
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.04,
-			"portrait": "bf",
+			"expression": "superpissed",
+			"text": "I fell asleep on COLD ASPHALT because YOU stopped me in my tracks!",
 			"boxState": "normal",
-			"expression": "mad",
-			"text": "But in the meantime, I’d say we’re about due for a song 3, wouldn’t you?"
-		},
-		{
-			"speed": 0.06,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "lookdown",
-			"text": "I only came prepared to sing 2..."
-		},
-		{
 			"speed": 0.035,
-			"portrait": "bf",
+			"portrait": "bf"
+		},
+		{
+			"expression": "ashamed",
+			"text": "I uh… I didn'’t realize that you would feel this way...",
 			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "superpissed",
+			"text": "Wait a minute... …WHAT DID YOU DO WITH\\nGIRLFRIEND?",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf"
+		},
+		{
+			"expression": "lookdown",
+			"text": "She uh... …went crowd surfing...",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "mad",
+			"text": "CROWD SURFING? If that's true, it\\ncertainly wasn't at her own will!",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf"
+		},
+		{
 			"expression": "me",
-			"text": "Oh, don’t worry... …I’LL start this one."
+			"text": "Girlfriend HATES people putting their hands all over her, except for MINE!",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "bf"
+		},
+		{
+			"expression": "guiltrip",
+			"text": "Listen, I don't know what happened to her! She probably got lost in the crowd\\nsomewhere, but couldn't have gone far!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "guiltrip",
+			"text": "I thought I was doing something nice by\\nletting you meet up with people who care about you!",
+			"boxState": "normal",
+			"speed": 0.055,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "mad",
+			"text": "Save the sob story for later, Lexi…... we can talk about this as soon as I get Girlfriend back.",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf"
+		},
+		{
+			"expression": "mad",
+			"text": "But in the meantime, I'd say we’re about due for a song 3, wouldn't you?",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf"
+		},
+		{
+			"expression": "lookdown",
+			"text": "I only came prepared to sing 2...",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "me",
+			"text": "Oh, don't worry... I'LL start this one.",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "bf"
 		}
 	]
 }

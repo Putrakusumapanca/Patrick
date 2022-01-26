@@ -1,76 +1,102 @@
 {
-	"dialogue_pos": "center",
 	"position": [
 		-55,
 		10
 	],
+	"dialogue_pos": "center",
 	"scale": 1,
+	"image": "gf-port",
 	"animations": [
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "talk",
-			"loop_offsets": [
+			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "normal",
-			"loop_name": "normal"
+			"loop_name": "normal",
+			"idle_name": "normal"
 		},
 		{
-			"idle_offsets": [
+			"loop_offsets": [
 				0,
 				0
 			],
 			"anim": "cheery",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "cheery",
+			"idle_name": "cheery"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "cheery",
-			"loop_name": "cheery"
-		},
-		{
+			"anim": "plead",
 			"idle_offsets": [
 				15,
 				5
 			],
-			"anim": "plead",
+			"loop_name": "plead",
+			"idle_name": "plead"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "plead",
-			"loop_name": "plead"
-		},
-		{
+			"anim": "frown",
 			"idle_offsets": [
 				15,
 				10
 			],
-			"anim": "frown",
+			"loop_name": "frown",
+			"idle_name": "frown"
+		},
+		{
 			"loop_offsets": [
 				0,
 				0
 			],
-			"idle_name": "frown",
-			"loop_name": "frown"
-		},
-		{
+			"anim": "SimleAndWave",
 			"idle_offsets": [
 				25,
 				25
 			],
-			"anim": "SimleAndWave",
-			"loop_offsets": [
+			"loop_name": "wave",
+			"idle_name": "wave"
+		},
+		{
+			"loop_name": "scared",
+			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "wave",
-			"loop_name": "wave"
+			"idle_name": "scared",
+			"anim": "scared",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "angry",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "angry",
+			"anim": "angry",
+			"loop_offsets": [
+				0,
+				0
+			]
 		}
-	],
-	"image": "gf-port"
+	]
 }
