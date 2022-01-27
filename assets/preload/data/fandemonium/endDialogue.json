@@ -1,396 +1,396 @@
 {
 	"dialogue": [
 		{
-			"speed": 0.05,
-			"portrait": "gf",
-			"boxState": "normal",
 			"expression": "scared",
-			"text": "Boyfriend! I-I don't know what happened!"
+			"text": "Boyfriend! I-I don't know what happened!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "gf",
-			"boxState": "normal",
 			"expression": "scared",
-			"text": "I saw you fall asleep on the sidewalk, and everything suddenly went dark..."
+			"text": "I saw you fall asleep on the sidewalk, and everything suddenly went dark...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
 		},
 		{
+			"expression": "scared",
+			"text": "And when I woke up, I was being crowd\\nsurfed by a bunch of LEXI CLONES!",
+			"boxState": "normal",
 			"speed": 0.045,
-			"portrait": "gf",
-			"boxState": "normal",
-			"expression": "scared",
-			"text": "And when I woke up, I was being crowd\\nsurfed by a bunch of LEXI CLONES!"
+			"portrait": "gf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "hey",
-			"text": "Hey, those aren't clones, those are my\\nfriends!"
-		},
-		{
-			"speed": 0.04,
-			"portrait": "gf",
+			"text": "Hey, those aren't clones, those are my\\nfriends!",
 			"boxState": "normal",
-			"expression": "angry",
-			"text": "Well, tell your FRIENDS to wear more\\ndistinguishable clothing!"
-		},
-		{
 			"speed": 0.05,
-			"portrait": "bf",
+			"portrait": "lexi"
+		},
+		{
+			"expression": "angry",
+			"text": "Well, tell your FRIENDS to wear more\\ndistinguishable clothing!",
 			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "gf"
+		},
+		{
 			"expression": "horror",
-			"text": "Girlfriend, that's... that's awful! Somebody must have done something to you!"
+			"text": "Girlfriend, that's... that's awful! Somebody must have done something to you!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "mad",
-			"text": "And I think I may have a wild guess as to who it was..."
+			"text": "And I think I may have a wild guess as to who it was...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "explain",
-			"text": "I didn't do anything to Girlfriend, I swear!"
+			"text": "I didn't do anything to Girlfriend, I swear!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "explain",
-			"text": "All I did was put her to sleep with a\\ntranquilizer dart, but nothing bad or\\n anything!"
+			"text": "All I did was put her to sleep with a\\ntranquilizer dart, but nothing bad or\\n anything!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "wut",
-			"text": "..."
-		},
-		{
-			"speed": 0.035,
-			"portrait": "bf",
+			"text": "...",
 			"boxState": "normal",
-			"expression": "Megapissed",
-			"text": "you WHAT?"
+			"speed": 0.05,
+			"portrait": "bf"
 		},
 		{
+			"expression": "Megapissed",
+			"text": "you WHAT?",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "bf"
+		},
+		{
+			"expression": "Megapissed",
+			"text": "WHY WOULD YOU DO SOMETHING LIKE\\n THAT IN YOUR RIGHT MIND?",
+			"boxState": "normal",
 			"speed": 0.025,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "Megapissed",
-			"text": "WHY WOULD YOU DO SOMETHING LIKE\\n THAT IN YOUR RIGHT MIND?"
+			"portrait": "bf"
 		},
 		{
+			"expression": "sad",
+			"text": "I was just... making sure my plan wouldn't have any disruptions or anything...",
+			"boxState": "normal",
 			"speed": 0.06,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "sad",
-			"text": "I was just... making sure my plan wouldn't have any disruptions or anything..."
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.035,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "pissed",
-			"text": "By SHOOTING MY GIRLFRIEND WITH A DART? And what PLAN are you even talking about?"
-		},
-		{
-			"speed": 0.055,
-			"portrait": "lexi",
+			"text": "By SHOOTING MY GIRLFRIEND WITH A DART? And what PLAN are you even talking about?",
 			"boxState": "normal",
-			"expression": "sad",
-			"text": "I knew you were going to fall asleep by the end of my second song."
-		},
-		{
-			"speed": 0.055,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "sad",
-			"text": "It was no coincidence that you were\\nsurrounded when you woke up."
-		},
-		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "shrug",
-			"text": "But look, you're crowded with admirers! Don't you like it?"
-		},
-		{
 			"speed": 0.035,
-			"portrait": "bf",
+			"portrait": "bf"
+		},
+		{
+			"expression": "sad",
+			"text": "I knew you were going to fall asleep by the end of my second song.",
 			"boxState": "normal",
+			"speed": 0.055,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "sad",
+			"text": "It was no coincidence that you were\\nsurrounded when you woke up.",
+			"boxState": "normal",
+			"speed": 0.055,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "shrug",
+			"text": "But look, you're crowded with admirers! Don't you like it?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
+		},
+		{
 			"expression": "me",
-			"text": "NO, I most certainly do NOT like it!"
+			"text": "NO, I most certainly do NOT like it!",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "pissed",
-			"text": "And what you're saying is that you sucked every last ounce of energy out of my body..."
-		},
-		{
+			"text": "And what you're saying is that you sucked every last ounce of energy out of my body...",
+			"boxState": "normal",
 			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "pissed",
-			"text": "...and shot my girlfriend with a dart..."
+			"portrait": "bf"
 		},
 		{
+			"expression": "pissed",
+			"text": "...and shot my girlfriend with a dart...",
+			"boxState": "normal",
 			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "pissed",
-			"text": "...just to get what you and your friends\\nwanted?"
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.055,
-			"portrait": "lexi",
+			"expression": "pissed",
+			"text": "...just to get what you and your friends\\nwanted?",
 			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf"
+		},
+		{
 			"expression": "ashamed",
-			"text": "I mean, that's only half of it, but I guess that's one way to put it."
+			"text": "I mean, that's only half of it, but I guess that's one way to put it.",
+			"boxState": "normal",
+			"speed": 0.055,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.09,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "sigh",
-			"text": "Unbelievable."
+			"text": "Unbelievable.",
+			"boxState": "normal",
+			"speed": 0.09,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "frown",
-			"text": "Come on Girlfriend, let's get out of here\\nbefore she puts you in danger again."
+			"text": "Come on Girlfriend, let's get out of here\\nbefore she puts you in danger again.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "Twosad",
-			"text": "D-danger?"
+			"text": "D-danger?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "gf",
-			"boxState": "normal",
 			"expression": "angry",
-			"text": "Lexi... I sincerely hope you get whatever help you need."
+			"text": "Lexi... I sincerely hope you get whatever help you need.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "gf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "mad",
-			"text": "And don't even THINK about following us\\nhome!"
+			"text": "And don't even THINK about following us\\nhome!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.04,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "reach",
-			"text": "GUYS, I CAN EXPLAIN! PLEASE DONT..."
+			"text": "GUYS, I CAN EXPLAIN! PLEASE DON'T...",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.08,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "altreach",
-			"text": "..."
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.08,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.075,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "ThreeReach",
-			"text": "They're gone."
+			"text": "They're gone.",
+			"boxState": "normal",
+			"speed": 0.075,
+			"portrait": "lexi"
 		},
 		{
+			"expression": "oneFanGirl",
+			"text": "Is that... …is that all true, Lexi?",
+			"boxState": "normal",
 			"speed": 0.06,
-			"portrait": "fangirl",
-			"boxState": "normal",
-			"expression": "oneFanGirl",
-			"text": "Is that... …is that all true, Lexi?"
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "oneFanGirl",
-			"text": "You shot his Girlfriend with a\\nTRANQUILIZER DART to get us here?"
+			"text": "You shot his Girlfriend with a\\nTRANQUILIZER DART to get us here?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "sad",
-			"text": "Yeah, but only because I thought it was what you wanted..."
-		},
-		{
-			"speed": 0.045,
-			"portrait": "fangirl",
+			"text": "Yeah, but only because I thought it was what you wanted...",
 			"boxState": "normal",
-			"expression": "madoneFanGirl",
-			"text": "You didn't tell us you were gonna do THAT!\\nI thought you'd just ask them nicely or\\nsomething!"
-		},
-		{
 			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
-			"expression": "madoneFanGirl",
-			"text": "Do you not see how wrong that is?"
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.045,
-			"portrait": "fangirl",
+			"expression": "madoneFanGirl",
+			"text": "You didn't tell us you were gonna do THAT!\\nI thought you'd just ask them nicely or\\nsomething!",
 			"boxState": "normal",
+			"speed": 0.045,
+			"portrait": "fangirl"
+		},
+		{
+			"expression": "madoneFanGirl",
+			"text": "Do you not see how wrong that is?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
+		},
+		{
 			"expression": "twoFanGirl",
-			"text": "Yeah, Lexi... my entire life revolves around obsessing over Boyfriend, and even I think that was too extreme."
+			"text": "Yeah, Lexi... my entire life revolves around obsessing over Boyfriend, and even I think that was too extreme.",
+			"boxState": "normal",
+			"speed": 0.045,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "ashamed",
-			"text": "Guys, I had no idea..."
-		},
-		{
-			"speed": 0.06,
-			"portrait": "lexi",
+			"text": "Guys, I had no idea...",
 			"boxState": "normal",
-			"expression": "Twosad",
-			"text": "I thought I was doing something nice the whole time..."
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
+			"expression": "Twosad",
+			"text": "I thought I was doing something nice the whole time...",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "sad",
+			"text": "For both you all AND Boyfriend...",
+			"boxState": "normal",
 			"speed": 0.065,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "sad",
-			"text": "For both you all AND Boyfriend..."
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.055,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "ashamed",
-			"text": "I guess I was too focused on meeting my idol to realize the harm I caused to achieve it."
+			"text": "I guess I was too focused on meeting my idol to realize the harm I caused to achieve it.",
+			"boxState": "normal",
+			"speed": 0.055,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "Threefangirl",
-			"text": "Well, what do we do now? Our idol hates us, and we just made an awful image for\\nourselves."
-		},
-		{
-			"speed": 0.06,
-			"portrait": "lexi",
+			"text": "Well, what do we do now? Our idol hates us, and we just made an awful image for\\nourselves.",
 			"boxState": "normal",
-			"expression": "sad",
-			"text": "You know guys, as much as I hate to say it..."
-		},
-		{
-			"speed": 0.06,
-			"portrait": "lexi",
-			"boxState": "normal",
-			"expression": "shrug",
-			"text": "...maybe it's time we give up the whole\\n fangirling gig."
-		},
-		{
 			"speed": 0.05,
-			"portrait": "lexi",
+			"portrait": "fangirl"
+		},
+		{
+			"expression": "sad",
+			"text": "You know guys, as much as I hate to say it...",
 			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "lexi"
+		},
+		{
+			"expression": "shrug",
+			"text": "...maybe it's time we give up the whole\\n fangirling gig.",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "lexi"
+		},
+		{
 			"expression": "Twosad",
-			"text": "Not just because of Boyfriend snapping at me... as much as it stings, I think his\\nreaction was warranted."
+			"text": "Not just because of Boyfriend snapping at me... as much as it stings, I think his\\nreaction was warranted.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.055,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "shrug",
-			"text": "But this whole situation has just made me realize how nothing good comes out of us obsessing over him at such extreme levels."
-		},
-		{
+			"text": "But this whole situation has just made me realize how nothing good comes out of us obsessing over him at such extreme levels.",
+			"boxState": "normal",
 			"speed": 0.055,
-			"portrait": "lexi",
-			"boxState": "normal",
+			"portrait": "lexi"
+		},
+		{
 			"expression": "sad",
-			"text": "I'll always admire him and his work, but\\nit’s time to stop making it our only defining trait."
+			"text": "I'll always admire him and his work, but\\nit’'s time to stop making it our only defining trait.",
+			"boxState": "normal",
+			"speed": 0.055,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "MeoneFanGirl",
-			"text": "Actually, I've been wanting to step down from the Unofficial Boyfriend Fanpage for a while."
+			"text": "Actually, I've been wanting to step down from the Unofficial Boyfriend Fanpage for a while.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "MeoneFanGirl",
-			"text": "I've been wanting to expand my account into digital art for a long time!"
+			"text": "I've been wanting to expand my account into digital art for a long time!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "HappyThreeFanGirl",
-			"text": "I'm okay with giving up fangirling. I hate people knowing me online as the ''“Boyfriend lover.''"
+			"text": "I'm okay with giving up fangirling. I hate people knowing me online as the ''“Boyfriend lover.''",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "HappyThreeFanGirl",
-			"text": "I want people to start liking me for who I really am!"
+			"text": "I want people to start liking me for who I really am!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "PointtwoFanGirl",
-			"text": "I never liked Boyfriend anyway, I just\\nwanted to be part of a friend group!"
+			"text": "I never liked Boyfriend anyway, I just\\nwanted to be part of a friend group!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "fangirl",
-			"boxState": "normal",
 			"expression": "GarGar",
-			"text": "I don't even know how I got here."
+			"text": "I don't even know how I got here.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "fangirl"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "wow",
-			"text": "Wow, I didn't expect the decision to be\\nso... unanimous."
+			"text": "Wow, I didn't expect the decision to be\\nso... unanimous.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "pumped",
-			"text": "It looks likes it's settled then! Let's leave all of this behind us and start becoming our own people!"
+			"text": "It looks likes it's settled then! Let's leave all of this behind us and start becoming our own people!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "shirtgrab",
-			"text": "I guess I won't be needing this cheap cosplay anymore..."
+			"text": "I guess I won't be needing this cheap cosplay anymore...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "lexi",
-			"boxState": "normal",
 			"expression": "cmere",
-			"text": "Come on, guys, let's go back to my place and have our first non-Boyfriend related hangout!"
+			"text": "Come on, guys, let's go back to my place and have our first non-Boyfriend related hangout!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "lexi"
 		}
 	]
 }
