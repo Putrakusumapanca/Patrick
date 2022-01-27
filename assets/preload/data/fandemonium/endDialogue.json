@@ -152,7 +152,7 @@
 			"portrait": "lexi",
 			"boxState": "normal",
 			"expression": "ashamed",
-			"text": "I mean, that's only half of it, but I guess that's one way to put it"
+			"text": "I mean, that's only half of it, but I guess that's one way to put it."
 		},
 		{
 			"speed": 0.09,
@@ -320,7 +320,7 @@
 			"portrait": "lexi",
 			"boxState": "normal",
 			"expression": "sad",
-			"text": "I'll always admire him and his work, but\\nit’s time to stop making it our only defining trait?"
+			"text": "I'll always admire him and his work, but\\nit’s time to stop making it our only defining trait."
 		},
 		{
 			"speed": 0.05,
