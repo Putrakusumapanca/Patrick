@@ -86,7 +86,7 @@ class CreditsState extends MusicBeatState
 			['Jason The Art Kid', 		'jason',			'Song 1 Lexi sprite animator, Stage background artist',																				'https://twitter.com/JasonTheArtKid',		'853b3c'],
 			['Dause_Retch',	'dause',	'Cutscene 1 animator, Song 3 Lexi Sprite animator, Song 1 Lexi sprite touchups, Title Screen Lexi',											'https://twitter.com/DauseRetch',						'ff2400'],
 			['Bastiano',				'bastiano',		'Song 2 and 3 boyfriend sprite/fangirl crowd animator',		'https://twitter.com/AliveBastiano',						'a65c5b'],
-			['Joe The Horse',				'joe',		'Coder, Animation help',		'https://www.youtube.com/c/JoeTheHorse92/videos',						'707b81'],
+			['JoeVil',				'joe',		'Coder, Animation help',		'https://www.youtube.com/c/JoeTheHorse92/videos',						'707b81'],
 			['Typic',				'typic',		'Cutscene 2 boyfriend animator',		'https://twitter.com/typicalemerald',						'bfe8ea'],
 			['King Peggy',				'peggy',		'Logo Designer',		'https://www.youtube.com/c/KingPeggy4/videos',						'ff8fd1'],
 			['Valengarfy',				'valen',		'Week menu banner artist',		'https://twitter.com/oh_pls_jsjss',						'f8a45f'],
