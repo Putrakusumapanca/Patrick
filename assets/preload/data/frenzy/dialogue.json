@@ -191,7 +191,7 @@
 		},
 		{
 			"expression": "frown",
-			"text": "''Biggest Fan?'' I didn't know boyfriend\\nhad fans. Or a fanpage.",
+			"text": "''Biggest Fan?'' I didn't know Boyfriend\\nhad fans. Or a fanpage.",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "gf"
@@ -212,7 +212,7 @@
 		},
 		{
 			"expression": "confused",
-			"text": "Really? I thought the dearests were a\\ncakewalk.",
+			"text": "Really? I thought the Dearests were a\\ncakewalk.",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "bf"
