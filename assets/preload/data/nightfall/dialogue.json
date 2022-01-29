@@ -44,7 +44,7 @@
 		},
 		{
 			"expression": "lookdown",
-			"text": "I uh… I actually came prepared to sing \\nsongs.",
+			"text": "I uh... I actually came prepared to sing\\nsongs.",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "lexi"
