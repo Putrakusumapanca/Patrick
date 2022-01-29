@@ -4,148 +4,148 @@
 			"expression": "horror",
 			"text": "Huh... where am I?",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.085
+			"speed": 0.085,
+			"portrait": "bf"
 		},
 		{
 			"expression": "PEOPLE",
 			"text": "SURPRISE!!!",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.05
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "horror",
 			"text": "W-What do you mean “''surprise?''",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.065
+			"speed": 0.065,
+			"portrait": "bf"
 		},
 		{
 			"expression": "excited",
 			"text": "Look around! I gathered up the whole\\nUnofficial Boyfriend Fanpage community\\nto this very spot!",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.05
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "talk",
 			"text": "While you were sleeping on that sidewalk, we all came together and formed a crowd!",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.05
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "pumped",
 			"text": "Now EVERYBODY gets to meet you!",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.05
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "provoked",
 			"text": "What? You... …you surrounded me in\\nFANGIRLS?",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.045
+			"speed": 0.045,
+			"portrait": "bf"
 		},
 		{
 			"expression": "excited",
 			"text": "Exactly! Isn't it awesome?",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.055
+			"speed": 0.055,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "pissed",
 			"text": "Awesome? One fangirl was PLENTY! I just wanted to go home, and now you have me SURROUNDED?",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.04
+			"speed": 0.04,
+			"portrait": "bf"
 		},
 		{
 			"expression": "superpissed",
 			"text": "I fell asleep on COLD ASPHALT because YOU stopped me in my tracks!",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.035
+			"speed": 0.035,
+			"portrait": "bf"
 		},
 		{
 			"expression": "ashamed",
 			"text": "I uh… I didn'’t realize that you would feel this way...",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.06
+			"speed": 0.06,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "superpissed",
 			"text": "Wait a minute... …WHAT DID YOU DO WITH\\nGIRLFRIEND?",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.04
+			"speed": 0.04,
+			"portrait": "bf"
 		},
 		{
 			"expression": "lookdown",
 			"text": "She uh... …went crowd surfing...",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.06
+			"speed": 0.06,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "mad",
 			"text": "CROWD SURFING? If that's true, it\\ncertainly wasn't at her own will!",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.04
+			"speed": 0.04,
+			"portrait": "bf"
 		},
 		{
 			"expression": "me",
 			"text": "Girlfriend HATES people putting their hands all over her, except for MINE!",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.035
+			"speed": 0.035,
+			"portrait": "bf"
 		},
 		{
 			"expression": "guiltrip",
 			"text": "Listen, I don't know what happened to her! She probably got lost in the crowd\\nsomewhere, but couldn't have gone far!",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.05
+			"speed": 0.05,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "guiltrip",
 			"text": "I thought I was doing something nice by\\nletting you meet up with people who care about you!",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.055
+			"speed": 0.055,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "mad",
 			"text": "Save the sob story for later, Lexi…... we can talk about this as soon as I get Girlfriend back.",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.04
+			"speed": 0.04,
+			"portrait": "bf"
 		},
 		{
 			"expression": "mad",
-			"text": "But in the meantime, I'd say we’re about due for a song 3, wouldn't you?",
+			"text": "But in the meantime, I'd say we’'re about due for a song 3, wouldn't you?",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.04
+			"speed": 0.04,
+			"portrait": "bf"
 		},
 		{
 			"expression": "lookdown",
 			"text": "I only came prepared to sing 2...",
 			"boxState": "normal",
-			"portrait": "lexi",
-			"speed": 0.06
+			"speed": 0.06,
+			"portrait": "lexi"
 		},
 		{
 			"expression": "me",
 			"text": "Oh, don't worry... I'LL start this one.",
 			"boxState": "normal",
-			"portrait": "bf",
-			"speed": 0.035
+			"speed": 0.035,
+			"portrait": "bf"
 		}
 	]
 }
