@@ -188,6 +188,7 @@ class PlayState extends MusicBeatState
 	public var iconP1:HealthIcon;
 	public var iconP2:HealthIcon;
 	public var camHUD:FlxCamera;
+	public var camText:FlxCamera;
 	public var camGame:FlxCamera;
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
@@ -329,11 +330,15 @@ class PlayState extends MusicBeatState
 		// var gameCam:FlxCamera = FlxG.camera;
 		camGame = new FlxCamera();
 		camHUD = new FlxCamera();
+		camText = new FlxCamera();
 		camOther = new FlxCamera();
 		camHUD.bgColor.alpha = 0;
+		camText.bgColor.alpha = 0;
+		camText.visible = false;
 		camOther.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
+		FlxG.cameras.add(camText);
 		FlxG.cameras.add(camHUD);
 		FlxG.cameras.add(camOther);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
@@ -467,6 +472,11 @@ class PlayState extends MusicBeatState
 					add(housesunset);
 	
 				case 'street-3-fandemonium':
+
+
+					// Leaving this for anyone that's digging around in the source code for whatever reason,
+					// just wanna say thanks for playing, it's been fun to work on this mod for y’all!
+					// -Joe'vil
 	
 					bgScreen = new FlxSprite().makeGraphic(3300, 3000, FlxColor.BLACK);
 					bgScreen.alpha = 0;
@@ -1040,10 +1050,12 @@ class PlayState extends MusicBeatState
 	public function videoAssFuck()
 	{
 		blackScreen = new FlxSprite().makeGraphic(4000, 4000, FlxColor.BLACK);
+		blackScreen.cameras = [camText];
 		blackScreen.x = -700;
 		blackScreen.y = -700;
 		add(blackScreen);
 
+		camText.visible = true;
 		camHUD.visible = false;
 		inCutscene = true;
 		dad.alpha = 0;
@@ -1052,7 +1064,7 @@ class PlayState extends MusicBeatState
 		boyfriend.specialAnim = true;
 		boyfriend.heyTimer = 20;
 
-		FlxTween.tween(blackScreen, {alpha: 0}, 1.5, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+		FlxTween.tween(camText, {alpha: 0}, 1.5, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
 			{
 				boyfriend.playAnim('get up', true);
 				boyfriend.specialAnim = true;
@@ -1067,9 +1079,8 @@ class PlayState extends MusicBeatState
 
 		new FlxTimer().start(8, function(tmr:FlxTimer)
 			{
-				FlxTween.tween(blackScreen, {alpha: 1}, 2, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+				FlxTween.tween(camText, {alpha: 1}, 2, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
 						{
-							camHUD.visible = true;
 							fandemoniumDialogue(dialogueJson);
 							boyfriend.playAnim('idle', true);
 							dad.alpha = 1;
@@ -1080,8 +1091,11 @@ class PlayState extends MusicBeatState
 
 	public function removeBG()
 		{
-			FlxTween.tween(blackScreen, {alpha: 0}, 3, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+			camHUD.alpha = 0;
+			camHUD.visible = true;
+			FlxTween.tween(camText, {alpha: 0}, 3, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
 				{
+					FlxTween.tween(camHUD, {alpha: 1}, 1, {ease: FlxEase.linear});
 					remove(blackScreen);
 					startCountdown();
 					snapCamFollowToPos(1702, 1262);
@@ -1109,7 +1123,7 @@ class PlayState extends MusicBeatState
 						}
 					doof.nextDialogueThing = startNextDialogue;
 					doof.skipDialogueThing = skipDialogue;
-					doof.cameras = [camHUD];
+					doof.cameras = [camText];
 					add(doof);
 				} 
 		}
@@ -1121,15 +1135,14 @@ class PlayState extends MusicBeatState
 		blackScreen = new FlxSprite().makeGraphic(4000, 4000, FlxColor.BLACK);
 		blackScreen.x = -700;
 		blackScreen.y = -700;
-		blackScreen.cameras = [camHUD];
-		blackScreen.alpha = 0;
+		blackScreen.cameras = [camText];
 		add(blackScreen);
 
 		trace("fandemoniumEnding active");
 
 		endingFandemonium = true;
 
-		FlxTween.tween(blackScreen, {alpha: 1}, 3, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+		FlxTween.tween(camText, {alpha: 1}, 3, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
 			{
 				if(endDialogueJson.dialogue.length > 0) 
 					{
@@ -1143,7 +1156,7 @@ class PlayState extends MusicBeatState
 							} 
 						doof.nextDialogueThing = startNextDialogue;
 						doof.skipDialogueThing = skipDialogue;
-						doof.cameras = [camHUD];
+						doof.cameras = [camText];
 						add(doof);
 					} 
 			}
@@ -1153,7 +1166,7 @@ class PlayState extends MusicBeatState
 	function thankYouForPlaying()
 	{
 		var thankYou:BGSprite = new BGSprite('Fangirl-Frenzy/images/ui/endcard', 0, 0, 1, 1);
-		thankYou.cameras = [camHUD];
+		thankYou.cameras = [camText];
 		thankYou.alpha = 0;
 		add(thankYou);
 
@@ -2819,6 +2832,8 @@ class PlayState extends MusicBeatState
 		return pressed;
 	}
 
+	var nightfallending:Bool = false;
+
 	public function triggerEventNote(eventName:String, value1:String, value2:String) {
 		switch(eventName) {
 
@@ -2826,6 +2841,8 @@ class PlayState extends MusicBeatState
 
 				if(curStage == 'street-2-nightfall')
 				{
+				nightfallending = true;
+				FlxTween.tween(camHUD, {alpha: 0}, 0.5, {ease: FlxEase.linear});
 				boyfriend.playAnim('dieslmao', true);
 				boyfriend.specialAnim = true;
 				boyfriend.heyTimer = 20;
@@ -3364,7 +3381,13 @@ class PlayState extends MusicBeatState
 				{
 					if (curStage == 'street-3-fandemonium')
 					{
-						fandemoniumEnding();
+						FlxTween.tween(camHUD, {alpha: 0}, 2, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+							{
+								camHUD.visible = false;
+								nightfallending = true;
+								fandemoniumEnding();
+							}
+							});
 					}
 					else
 					{
@@ -3684,7 +3707,7 @@ class PlayState extends MusicBeatState
 		var key:Int = getKeyFromEvent(eventKey);
 		//trace('Pressed: ' + eventKey);
 
-		if (!cpuControlled && !paused && key > -1 && (FlxG.keys.checkStatus(eventKey, JUST_PRESSED) || ClientPrefs.controllerMode))
+		if (!nightfallending && !cpuControlled && !paused && key > -1 && (FlxG.keys.checkStatus(eventKey, JUST_PRESSED) || ClientPrefs.controllerMode))
 		{
 			if(!boyfriend.stunned && generatedMusic && !endingSong)
 			{
