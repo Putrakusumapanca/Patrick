@@ -189,6 +189,7 @@ class PlayState extends MusicBeatState
 	public var iconP2:HealthIcon;
 	public var camHUD:FlxCamera;
 	public var camText:FlxCamera;
+	public var camWarn:FlxCamera;
 	public var camGame:FlxCamera;
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
@@ -330,9 +331,12 @@ class PlayState extends MusicBeatState
 		// var gameCam:FlxCamera = FlxG.camera;
 		camGame = new FlxCamera();
 		camHUD = new FlxCamera();
+		camWarn = new FlxCamera();
 		camText = new FlxCamera();
 		camOther = new FlxCamera();
 		camHUD.bgColor.alpha = 0;
+		camWarn.bgColor.alpha = 0;
+		camWarn.visible = false;
 		camText.bgColor.alpha = 0;
 		camText.visible = false;
 		camOther.bgColor.alpha = 0;
@@ -340,6 +344,7 @@ class PlayState extends MusicBeatState
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camText);
 		FlxG.cameras.add(camHUD);
+		FlxG.cameras.add(camWarn);
 		FlxG.cameras.add(camOther);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
 
@@ -938,8 +943,9 @@ class PlayState extends MusicBeatState
 			}
 		}
 		#end
-		
+
 		var daSong:String = Paths.formatToSongPath(curSong);
+
 		if (isStoryMode && !seenCutscene)
 		{
 			switch (daSong)
@@ -1003,11 +1009,11 @@ class PlayState extends MusicBeatState
 
 				case 'frenzy':
 					snapCamFollowToPos(2237, 1425);
-					startDialogue(dialogueJson);
+					fandemoniumDialogue(dialogueJson);
 
 				case 'nightfall':
 					snapCamFollowToPos(2237, 1425);
-					startDialogue(dialogueJson);
+					fandemoniumDialogue(dialogueJson);
 
 				case 'fandemonium':
 					startVideo('nightfallending');
@@ -1091,13 +1097,10 @@ class PlayState extends MusicBeatState
 
 	public function removeBG()
 		{
-			camHUD.alpha = 0;
-			camHUD.visible = true;
 			FlxTween.tween(camText, {alpha: 0}, 3, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
 				{
-					FlxTween.tween(camHUD, {alpha: 1}, 1, {ease: FlxEase.linear});
 					remove(blackScreen);
-					startCountdown();
+					arrow_warning();
 					snapCamFollowToPos(1702, 1262);
 				}
 				});
@@ -1119,7 +1122,21 @@ class PlayState extends MusicBeatState
 						} 
 					else
 						{
-							doof.finishThing = removeBG;
+							switch (curStage)
+							{
+								case 'street-1':
+									camHUD.visible = false;
+									camText.visible = true;
+									doof.finishThing = startCountdown;
+
+								case 'street-2-nightfall':
+									camHUD.visible = false;
+									camText.visible = true;
+									doof.finishThing = arrow_warning;
+
+								case 'street-3-fandemonium':
+									doof.finishThing = removeBG;
+							}
 						}
 					doof.nextDialogueThing = startNextDialogue;
 					doof.skipDialogueThing = skipDialogue;
@@ -1213,6 +1230,82 @@ class PlayState extends MusicBeatState
 			changedDifficulty = false;
 		}
 
+	function arrow_warning()
+		{
+
+		var headingText:String = "";
+		var text:String = "";
+		var icon:Int = 0;
+
+		camHUD.visible = true;
+		camHUD.alpha = 0;
+		camWarn.visible = true;
+		camWarn.alpha = 0;
+
+		if (curStage == 'street-2-nightfall')
+					{
+						headingText = "Ghost Notes!";
+						text = "Ghost notes are hallucinations that have no penalty for being hit or missed. Don't get distracted!";
+						icon = 1;
+					}
+		else if (curStage == 'street-3-fandemonium')
+					{
+						headingText = "Rage Notes!";
+						text = "Rage notes deal damage and increase the scroll speed temporarily when hit. Avoid them!";
+						icon = 0;
+					}
+
+		FlxG.sound.play(Paths.sound('confirmMenu'), 10);
+
+		var arrowBG:FlxSprite = new FlxSprite(60, 50).makeGraphic(420, 150, FlxColor.BLACK);
+		arrowBG.scrollFactor.set();
+
+		var arrowIcon:FlxSprite = new FlxSprite(arrowBG.x + 15, arrowBG.y + 25).loadGraphic(Paths.image('arrowgrid'), true, 150, 150);
+		arrowIcon.animation.add('icon', [icon], 0, false, false);
+		arrowIcon.animation.play('icon');
+		arrowIcon.scrollFactor.set();
+		arrowIcon.setGraphicSize(Std.int(arrowIcon.width * (2 / 3)));
+		arrowIcon.updateHitbox();
+		arrowIcon.antialiasing = ClientPrefs.globalAntialiasing;
+
+		var arrowName:FlxText = new FlxText(arrowIcon.x + arrowIcon.width + 20, arrowIcon.y - 2, 280, headingText, 16);
+		arrowName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT);
+		arrowName.scrollFactor.set();
+
+		var arrowText:FlxText = new FlxText(arrowName.x, arrowName.y + 32, 280, text, 16);
+		arrowText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT);
+		arrowText.scrollFactor.set();
+
+		arrowBG.cameras = [camWarn];
+		arrowName.cameras = [camWarn];
+		arrowText.cameras = [camWarn];
+		arrowIcon.cameras = [camWarn];
+
+		add(arrowBG);
+		add(arrowName);
+		add(arrowText);
+		add(arrowIcon);
+
+		FlxTween.tween(camWarn, {alpha: 1}, 1, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+			{
+				new FlxTimer().start(3.5, function(tmr:FlxTimer)
+					{
+						FlxTween.tween(camWarn, {alpha: 0}, 1, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+							{
+								FlxTween.tween(camHUD, {alpha: 1}, 1, {ease: FlxEase.linear});
+								remove(arrowBG);
+								remove(arrowName);
+								remove(arrowText);
+								remove(arrowIcon);
+								camWarn.visible = false;
+								startCountdown();
+							}
+							});
+					});
+			}
+			});
+
+		}
 
 	function set_songSpeed(value:Float):Float
 	{
@@ -1515,7 +1608,10 @@ class PlayState extends MusicBeatState
 			} else {
 				psychDialogue.finishThing = function() {
 					psychDialogue = null;
-					startCountdown();
+					switch (curStage)
+					{
+
+					}
 				}
 			}
 			psychDialogue.nextDialogueThing = startNextDialogue;
@@ -1698,7 +1794,13 @@ class PlayState extends MusicBeatState
 					santa.dance(true);
 				}
 
-				switch(curStage) {
+				switch(curStage) 
+				{
+					case 'street-1':
+						camHUD.alpha = 0;
+						camHUD.visible = true;
+						FlxTween.tween(camHUD, {alpha: 1}, 1, {ease: FlxEase.linear});
+
 					case 'street-3-fandemonium':
 						snapCamFollowToPos(1702, 1262);
 						FlxG.camera.zoom = defaultCamZoom;
