@@ -1257,10 +1257,17 @@ class PlayState extends MusicBeatState
 
 		FlxG.sound.play(Paths.sound('confirmMenu'), 10);
 
-		var arrowBG:FlxSprite = new FlxSprite(60, 50).makeGraphic(420, 150, FlxColor.BLACK);
+		var arrowBG:FlxSprite = new FlxSprite(0, 0).makeGraphic(630, 225, FlxColor.BLACK);
+		arrowBG.screenCenter();
+		arrowBG.alpha = 0.8;
 		arrowBG.scrollFactor.set();
 
-		var arrowIcon:FlxSprite = new FlxSprite(arrowBG.x + 15, arrowBG.y + 25).loadGraphic(Paths.image('arrowgrid'), true, 150, 150);
+		var arrowBG2:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
+		arrowBG2.screenCenter();
+		arrowBG2.alpha = 0.7;
+		arrowBG2.scrollFactor.set();
+
+		var arrowIcon:FlxSprite = new FlxSprite(arrowBG.x + 22.5, arrowBG.y + 37.5).loadGraphic(Paths.image('arrowgrid'), true, 225, 225);
 		arrowIcon.animation.add('icon', [icon], 0, false, false);
 		arrowIcon.animation.play('icon');
 		arrowIcon.scrollFactor.set();
@@ -1268,19 +1275,21 @@ class PlayState extends MusicBeatState
 		arrowIcon.updateHitbox();
 		arrowIcon.antialiasing = ClientPrefs.globalAntialiasing;
 
-		var arrowName:FlxText = new FlxText(arrowIcon.x + arrowIcon.width + 20, arrowIcon.y - 2, 280, headingText, 16);
-		arrowName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT);
+		var arrowName:FlxText = new FlxText(arrowIcon.x + arrowIcon.width + 30, arrowIcon.y - 3, 420, headingText, 24);
+		arrowName.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.WHITE, LEFT);
 		arrowName.scrollFactor.set();
 
-		var arrowText:FlxText = new FlxText(arrowName.x, arrowName.y + 32, 280, text, 16);
-		arrowText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT);
+		var arrowText:FlxText = new FlxText(arrowName.x, arrowName.y + 48, 420, text, 24);
+		arrowText.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.WHITE, LEFT);
 		arrowText.scrollFactor.set();
 
+		arrowBG2.cameras = [camWarn];
 		arrowBG.cameras = [camWarn];
 		arrowName.cameras = [camWarn];
 		arrowText.cameras = [camWarn];
 		arrowIcon.cameras = [camWarn];
 
+		add(arrowBG2);
 		add(arrowBG);
 		add(arrowName);
 		add(arrowText);
@@ -1293,6 +1302,7 @@ class PlayState extends MusicBeatState
 						FlxTween.tween(camWarn, {alpha: 0}, 1, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
 							{
 								FlxTween.tween(camHUD, {alpha: 1}, 1, {ease: FlxEase.linear});
+								remove(arrowBG2);
 								remove(arrowBG);
 								remove(arrowName);
 								remove(arrowText);
