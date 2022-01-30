@@ -4,127 +4,127 @@
 			"expression": "talk",
 			"text": "That was...",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "excited",
 			"text": "INCREDIBLE!",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "exhausted",
 			"text": "Glad you liked it, because now I'm\\nexhausted.",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "tired",
 			"text": "It was fun while it lasted, but me and\\nGirlfriend are gonna hit the sack.",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "SimleAndWave",
 			"text": "Have a good afternoon, Lexi! We'll see you around!",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "gf"
+			"portrait": "gf",
+			"speed": 0.05
 		},
 		{
 			"expression": "reach",
 			"text": "WAIT! DON'T GO!",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "lookdown",
-			"text": "I uh... I actually came prepared to sing\\nsongs.",
+			"text": "I uh... I actually came prepared to sing\\n 2 songs...",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "tired",
 			"text": "I'm very sorry Lexi, but I don't think I can physically force out another note.",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "guiltrip",
 			"text": "Aw man..... It took me ages to compose!",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "guiltrip",
 			"text": "It'd be a shame to let it go to waste...",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "frown",
 			"text": "Are you guilt tripping us right now?",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "gf"
+			"portrait": "gf",
+			"speed": 0.05
 		},
 		{
 			"expression": "joke",
 			"text": "PFFFFFT. What? Of course not!",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "lookdown",
 			"text": "Ok yeah I'm totally guilt tripping you.",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "frown",
 			"text": "Meh, at least you're honest.",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "gf"
+			"portrait": "gf",
+			"speed": 0.05
 		},
 		{
 			"expression": "tired",
 			"text": "Alright fine, but this better be a short one.",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "exhausted",
 			"text": "I'm starting to see crazy stuff now... feels like I could pass out in approximately\\n2 minutes, give or take.",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "bf"
+			"portrait": "bf",
+			"speed": 0.05
 		},
 		{
 			"expression": "talk",
 			"text": "Oddly specific, but works for me!",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		},
 		{
 			"expression": "cheery",
 			"text": "I hope you enjoy this one as much as I do!",
 			"boxState": "normal",
-			"speed": 0.05,
-			"portrait": "lexi"
+			"portrait": "lexi",
+			"speed": 0.05
 		}
 	]
 }
