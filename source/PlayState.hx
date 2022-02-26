@@ -1154,6 +1154,9 @@ class PlayState extends MusicBeatState
 		blackScreen.y = -700;
 		blackScreen.cameras = [camText];
 		add(blackScreen);
+		
+		camText.alpha = 0;
+		camText.visible = true;
 
 		trace("fandemoniumEnding active");
 
@@ -2972,6 +2975,18 @@ class PlayState extends MusicBeatState
 				FlxTween.tween(housesunset, {alpha: 0}, 93, {startDelay: 5});
 				FlxTween.tween(skysunset, {alpha: 0}, 93, {startDelay: 5});
 				FlxTween.tween(fandemoniumHue, {alpha: 0.55}, 60, {startDelay: 45});
+				}
+
+			case 'dumb ending fix':
+				if(!endingFandemonium)
+				{
+					FlxTween.tween(camHUD, {alpha: 0}, 2, {ease: FlxEase.linear,onComplete: function(twn:FlxTween) 
+						{
+							camHUD.visible = false;
+							nightfallending = true;
+							fandemoniumEnding();
+						}
+						});
 				}
 
 
