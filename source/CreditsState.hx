@@ -79,6 +79,11 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+                        #if android
+		        ['Android Port'],
+		        ['Saw (M.A. Jigsaw)','saw','Main Coder','https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ', 'F73838'],
+		        [''],
+                        #end
 			['FGF Team'],
 			['Dra9on5',				'dra9on5',		'Initial mod concept, Team organizer/director, Charter, Vocal/SFX assistance',		'https://twitter.com/Dra9onSlayer5',						'7d30a7'],
 			['Nutquesadilla',				'nutcase',		'Creator of Lexi, Concept artist, Plot/dialogue writer, Dialogue portrait/icon artist, Charter',		'https://twitter.com/Nutquesadilla',						'7ffbf2'],
@@ -160,6 +165,11 @@ class CreditsState extends MusicBeatState
 		bg.color = getCurrentBGColor();
 		intendedColor = bg.color;
 		changeSelection();
+
+                #if android
+	        addVirtualPad(UP_DOWN, A_B);
+                #end
+
 		super.create();
 	}
 
