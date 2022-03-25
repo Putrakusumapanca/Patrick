@@ -447,7 +447,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			}
 		}
    
-		if (FlxG.keys.justPressed.ESCAPE && !activeESCAPE)
+		if (FlxG.keys.justPressed.ESCAPE #if android || FlxG.android.justReleased.BACK #end && !activeESCAPE)
 			{
 				backspace.animation.play('selected', true);
 				backspace.x -= 10;
