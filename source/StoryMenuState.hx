@@ -155,6 +155,10 @@ class StoryMenuState extends MusicBeatState
 
 		changeWeek();
 
+                #if android
+	        addVirtualPad(NONE, A_B_X_Y);
+                #end
+
 		super.create();
 	}
 
