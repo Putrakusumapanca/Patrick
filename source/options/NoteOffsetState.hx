@@ -196,6 +196,11 @@ class NoteOffsetState extends MusicBeatState
 		Conductor.changeBPM(128.0);
 		FlxG.sound.playMusic(Paths.music('offsetSong'), 1, true);
 
+                #if android
+	        addVirtualPad(FULL, A_B_X_Y);
+                addPadCamera();
+                #end
+
 		super.create();
 	}
 
@@ -209,7 +214,7 @@ class NoteOffsetState extends MusicBeatState
 	override public function update(elapsed:Float)
 	{
 		var addNum:Int = 1;
-		if(FlxG.keys.pressed.SHIFT) addNum = 10;
+		if(FlxG.keys.pressed.SHIFT #if android || _virtualpad.buttonX.justPressed #end) addNum = 10;
 
 		if(onComboMenu)
 		{
@@ -295,7 +300,7 @@ class NoteOffsetState extends MusicBeatState
 				}
 			}
 
-			if(controls.RESET)
+			if(controls.RESET #if android || _virtualpad.buttonY.justPressed #end)
 			{
 				for (i in 0...ClientPrefs.comboOffset.length)
 				{
@@ -333,7 +338,7 @@ class NoteOffsetState extends MusicBeatState
 				updateNoteDelay();
 			}
 
-			if(controls.RESET)
+			if(controls.RESET #if android || _virtualpad.buttonY.justPressed #end)
 			{
 				holdTime = 0;
 				barPercent = 0;
