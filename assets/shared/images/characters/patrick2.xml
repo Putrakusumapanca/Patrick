@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="patrick2.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle 20000" x="11" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20001" x="503" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20002" x="995" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20003" x="1487" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20004" x="1979" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20005" x="2471" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20006" x="2963" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20007" x="3455" y="11" width="442" height="756"/>
+	<SubTexture name="idle 20008" x="11" y="817" width="442" height="756"/>
+	<SubTexture name="idle 20009" x="11" y="817" width="442" height="756"/>
+	<SubTexture name="idle 20010" x="11" y="817" width="442" height="756"/>
+	<SubTexture name="idle 20011" x="11" y="817" width="442" height="756"/>
+	<SubTexture name="idle 20012" x="11" y="817" width="442" height="756"/>
+	<SubTexture name="idle 20013" x="11" y="817" width="442" height="756"/>
+	<SubTexture name="up 20000" x="503" y="817" width="441" height="777"/>
+	<SubTexture name="up 20001" x="994" y="817" width="441" height="777"/>
+	<SubTexture name="up 20002" x="1485" y="817" width="441" height="777"/>
+	<SubTexture name="up 20003" x="1976" y="817" width="441" height="777"/>
+	<SubTexture name="up 20004" x="2467" y="817" width="441" height="777"/>
+	<SubTexture name="up 20005" x="2467" y="817" width="441" height="777"/>
+	<SubTexture name="up 20006" x="2467" y="817" width="441" height="777"/>
+	<SubTexture name="up 20007" x="2467" y="817" width="441" height="777"/>
+	<SubTexture name="up 20008" x="2467" y="817" width="441" height="777"/>
+	<SubTexture name="up 20009" x="2467" y="817" width="441" height="777"/>
+</TextureAtlas>
