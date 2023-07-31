@@ -1,0 +1,39 @@
+{
+	"storyName": "hey spongebob",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Seizure Showdown",
+			"pat",
+			[
+				255,
+				135,
+				113
+			]
+		],
+		[
+			"sdkaskdnsjoabdhjiavbdaidsnaopisdhoadbhiuasbdiyavbdkhnjbhuvbyvygvyft7drsrcugyubjinkom;m;mo;bnyuivyufyu",
+			"dad",
+			[
+				255,
+				195,
+				113
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "spongebob"
+}
